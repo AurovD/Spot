@@ -1,0 +1,25 @@
+@import "./components/header.css";
+@import "./components/nav.css";
+@import "./components/main.css";
+@import "./components/forms.css";
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px auto;
+    background-color: #000;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: none;
+    }
+}

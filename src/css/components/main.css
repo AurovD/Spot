@@ -1,0 +1,15 @@
+.main__container {
+    grid-column: 2 /3;
+    position: relative;
+    height: 2000px;
+    background-color: #16171A;
+}
+.banner {
+    height: 400px;
+    background-color: #444
+}
+@media (max-width: 768px) {
+    .main__container {
+        grid-column: 1 /3;
+    }
+}

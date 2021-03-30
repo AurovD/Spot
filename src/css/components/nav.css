@@ -1,0 +1,12 @@
+.nav__container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 100vh;
+    background-color: #1C1D22;
+}
+@media (max-width: 768px) {
+    .nav__container {
+        display: none;
+    }
+}
