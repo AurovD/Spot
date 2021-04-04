@@ -1,3 +1,5 @@
+import {login} from "../actions/users";
+
 const initialState = {
     user: "",
     id: ""
@@ -5,11 +7,17 @@ const initialState = {
 const users = (state = initialState, action) => {
     switch (action.type) {
         case 'SET_USER':
-            return {
-                ...state,
-                user: action.data["login"],
-                id: action.data["id"],
-            };
+            if(action.data) {
+                return {
+                    ...state,
+                    user: action.data["login"],
+                    id: action.data["id"],
+                };
+            }
+        case 'REM_USER':
+            if(action.data) {
+                console.log("jkhkhh")
+            }
         default:
             return state;
     }

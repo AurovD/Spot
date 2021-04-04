@@ -1,10 +1,9 @@
 function userToken() {
     const tokenString = localStorage.getItem('token');
-    console.log(tokenString);
     const user = JSON.parse(tokenString);
     return user;
 }
-export const createUser = (body) => async (dispatch) => {
+export const createUser = (body) => async () => {
     console.log(body)
     let res = await fetch("http://localhost:8001/api/signup", {
         method: "POST",
@@ -38,6 +37,10 @@ export const login = (body) => async (dispatch) => {
 export const setUser = () => ({
     type: 'SET_USER',
     data: userToken()
+});
+export const removeUser = () => ({
+    type: 'REM_USER',
+    data: null
 });
 
 export const setForm = (value, string) => ({

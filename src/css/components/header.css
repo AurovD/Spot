@@ -32,6 +32,7 @@ header input {
     flex-grow: 1;
 }
 .profile__button {
+    display: block;
     width: 100px;
     height: 40px;
     background-color: rgb(255, 101, 13);

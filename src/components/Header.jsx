@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
 import {Link} from 'react-router-dom';
 import {setForm} from "../redux/actions/users";
 import {useDispatch} from "react-redux";
+import {useHistory} from "react-router-dom";
 const Header = ({profile}) => {
     console.log(profile)
     const dispatch = useDispatch();
@@ -16,8 +16,8 @@ const Header = ({profile}) => {
                 }}>Создать</button>}
                 {
                     profile ?
-                        <Link to="">
-                            <button className="profile__button" onClick={event => {}}>{profile}</button>
+                        <Link to="/profile">
+                            <button className="profile__button">{profile}</button>
                         </Link> :
                         <button className="profile__button profile__button__login" onClick={
                             event => {

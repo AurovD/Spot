@@ -3,13 +3,15 @@ import MD5 from "../assets/md5";
 import {setForm} from "../redux/actions/users";
 import {useDispatch, useSelector} from "react-redux";
 import Upload from "../assets/upload.svg";
+import {create} from "../redux/actions/events";
+import {Redirect} from "react-router-dom";
 // http://codepickup.in/php/create-a-zoom-meeting-using-zoom-api/
 
 const Forms = ({setProfile, setNewProfile}) => {
     const dispatch = useDispatch();
     const [loginPage, setRegPage] = React.useState(true);
     let forms = useSelector(({forms}) => forms);
-
+    console.log(forms)
     const [selectedFiles, setSelectedFiles] = React.useState([]);
 
     function handleChangeFiles(e) {
@@ -26,8 +28,8 @@ const Forms = ({setProfile, setNewProfile}) => {
     }
 
     const [login, setLogin] = React.useState({
-        login: "",
-        pass: ""
+        login: "Spot",
+        pass: "111"
     });
     const [registration, setRegistration] = React.useState({
         login: "",
@@ -46,7 +48,22 @@ const Forms = ({setProfile, setNewProfile}) => {
         type: "",
         periodic: ""
     });
-    console.log(body);
+
+    const sendForm = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        let fd = new FormData();
+        if(selectedFiles.length !== 0) {
+            selectedFiles.files.forEach((file) => {
+                fd.append('file', file)
+            })
+        }
+        for (let k in body) {
+            fd.append(k, typeof body[k] === "string" ? body[k] : JSON.stringify(body[k]));
+        }
+        dispatch(create(fd));
+        dispatch(setForm(false, ""));
+    }
 
     const handleOutsideClick = (e) => {
         let login = document.querySelector(".profile__button__login");
@@ -64,6 +81,7 @@ const Forms = ({setProfile, setNewProfile}) => {
         if(login.login !== "" && login.pass !== "") {
             login.pass = MD5(login.pass)
             setProfile(login);
+            dispatch(setForm(false, ""));
         }
     };
     const submitRegForm = (e) => {
@@ -74,12 +92,13 @@ const Forms = ({setProfile, setNewProfile}) => {
             registration.pass = MD5(registration.pass);
             registration.passCheck = "";
             setNewProfile(registration);
+            dispatch(setForm(false, ""));
         }
     };
 
     React.useEffect(() => {
-        document.body.addEventListener("click", handleOutsideClick);
-    }, []);
+        document.body.addEventListener("click", handleOutsideClick)
+    }, [forms.value]);
 
 
     return (
@@ -107,7 +126,7 @@ const Forms = ({setProfile, setNewProfile}) => {
                                            }}
                                            required/>
                                 </div>
-                                <input className="button__submit" type="submit" value="Войти" onClick={submitLoginForm}/>
+                                <input className="button__submit" type="submit" value="Войти" onClick={submitLoginForm} />
                             </form>
                             <p className="profile_span">Нет учетной записи? <span onClick={switchProfileForm}>Создать учетную запись</span></p>
                         </div> :
@@ -169,7 +188,7 @@ const Forms = ({setProfile, setNewProfile}) => {
     :
         forms.value && forms.string === "create" &&<div className="form__container"><div className="formBox formBox__grid" ref={sortRef}>
             <h2>CREATE</h2>
-            <form action="" method="POST" className="create__grid">
+            <form className="create__grid" action="/api/createEvent" method="POST" encType="multipart/form-data">
                 <div className="form_groupbox">
                     <div className="form-group">
                         <label className="form-group_label">Название</label>
@@ -253,8 +272,8 @@ const Forms = ({setProfile, setNewProfile}) => {
                     <div className="form-group">
                         <label className="form-group_label">Баннер</label>
                         <div className="input__fileBox">
-                            <input name="file" type="file" name="file" id="input__file" className="form_element" name="file"
-                                   className="input input__file" onChange={handleChangeFiles} multiple/>
+                            <input name="file" type="file" id="input__file" className="form_element" name="file"
+                                   className="input input__file" onChange={handleChangeFiles}/>
                             <label htmlFor="input__file" className="input__file-button">
                                     <span className="input__file-icon-wrapper"><img className="input__file-icon"
                                                                                     src={Upload}
@@ -291,7 +310,7 @@ const Forms = ({setProfile, setNewProfile}) => {
                             <input className="form_element" type="date" /></label>
                     </div>
                 </div>
-                <input className="button__submit" type="submit" value="Создать" />
+                <input className="button__submit" type="submit" value="Создать" onClick={sendForm}/>
             </form>
         </div></div>
     );
