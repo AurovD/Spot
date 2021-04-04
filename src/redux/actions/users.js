@@ -1,4 +1,3 @@
-import { getCookie, setCookie } from 'redux-cookie';
 function userToken() {
     const user = document.cookie.split("=")[1];
     return user;
@@ -29,7 +28,6 @@ export const login = (body) => async (dispatch) => {
     });
     let data = await res.json();
     if(data) {
-        // localStorage.setItem('token', JSON.stringify(data.data));
         document.cookie = "user" + "=" + data.data;
         dispatch(setUser());
     }

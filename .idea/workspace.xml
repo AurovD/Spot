@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="global changes coming">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profil.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +105,7 @@
       <workItem from="1617134478491" duration="1770000" />
       <workItem from="1617137020042" duration="6246000" />
       <workItem from="1617191285331" duration="33000" />
-      <workItem from="1617546858715" duration="13624000" />
+      <workItem from="1617546858715" duration="14109000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -145,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617552189434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="logout fixed">
+      <created>1617566359296</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617566359296</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +163,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="global changes coming" />
     <MESSAGE value="fixed adding files" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed adding files" />
+    <MESSAGE value="logout fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="logout fixed" />
   </component>
 </project>
