@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 300px auto;
-    background-color: #000;
+    background-color: #E9EAF2;
 }
 @media (max-width: 768px) {
     .container {

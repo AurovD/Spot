@@ -23,9 +23,9 @@ const login = async (req, res) => {
         if (err) {
             throw err;
         } else if (result) {
-            console.log(result);
+            console.log(result.rows);
             res.send({
-                data: {login: result.rows[0].login, id: result.rows[0].id}
+                data: result.rows[0].login
             });
         }
     });

@@ -1,6 +1,6 @@
+import { getCookie, setCookie } from 'redux-cookie';
 function userToken() {
-    const tokenString = localStorage.getItem('token');
-    const user = JSON.parse(tokenString);
+    const user = document.cookie.split("=")[1];
     return user;
 }
 export const createUser = (body) => async () => {
@@ -29,7 +29,8 @@ export const login = (body) => async (dispatch) => {
     });
     let data = await res.json();
     if(data) {
-        localStorage.setItem('token', JSON.stringify(data.data));
+        // localStorage.setItem('token', JSON.stringify(data.data));
+        document.cookie = "user" + "=" + data.data;
         dispatch(setUser());
     }
 };
@@ -37,10 +38,6 @@ export const login = (body) => async (dispatch) => {
 export const setUser = () => ({
     type: 'SET_USER',
     data: userToken()
-});
-export const removeUser = () => ({
-    type: 'REM_USER',
-    data: null
 });
 
 export const setForm = (value, string) => ({

@@ -17,7 +17,7 @@ const Header = ({profile}) => {
                 {
                     profile ?
                         <Link to="/profile">
-                            <button className="profile__button">{profile}</button>
+                            <button className="profile__button">hjgkg</button>
                         </Link> :
                         <button className="profile__button profile__button__login" onClick={
                             event => {
