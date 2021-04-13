@@ -1,5 +1,4 @@
 const pool = require("../models/bd");
-console.log("hello")
 const signup = async (req, res) => {
     console.log("jhgkg", req.body)
     pool.query("CREATE  TABLE IF NOT EXISTS users( id SERIAL PRIMARY KEY,  login TEXT NOT NULL, name VARCHAR(15) NOT NULL, email TEXT NOT NULL, pwd TEXT NOT NULL, role TEXT DEFAULT 'user');", (err, res) => {

@@ -15,7 +15,13 @@ const cors = require("cors");
 //     if (req.method === 'OPTIONS') {
 //         res.status(200);
 //     } next(); });
-app.use(cors());
+const corsOptions = {
+    credentials: true,
+    origin: 'http://aurovd.ru',
+    allowedHeaders: ['Content-Type'],
+    optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 app.use(express.urlencoded({extended: true}));
 app.use("/api", require("./api/routes/index"));
 

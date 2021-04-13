@@ -3,7 +3,6 @@ function userToken() {
     return user;
 }
 export const createUser = (body) => async () => {
-    console.log(body)
     let res = await fetch("http://localhost:8001/api/signup", {
         method: "POST",
         headers: {
