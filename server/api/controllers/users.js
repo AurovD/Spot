@@ -10,7 +10,9 @@ const signup = async (req, res) => {
     });
     pool.query('INSERT INTO users (login, name, email, pwd) VALUES ($1, $2, $3, $4)', [req.body.login, req.body.name, req.body.email, req.body.pass], (err, result) => {
         if (err) {
-            throw err;
+            res.send({
+                "msg": {err}
+            });
         } else if (result) {
             res.send({
                 "msg": "ok"
