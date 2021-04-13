@@ -106,7 +106,7 @@
       <workItem from="1617137020042" duration="6246000" />
       <workItem from="1617191285331" duration="33000" />
       <workItem from="1617546858715" duration="15323000" />
-      <workItem from="1618304423379" duration="2979000" />
+      <workItem from="1618304423379" duration="3355000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618304625897</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Are ready for git clone?">
+      <created>1618312857293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618312857293</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
