@@ -5,7 +5,6 @@ const storage = multer.diskStorage({
         cb(null, './');
     },
     filename: function (req, file, cb) {
-        console.log("kjhl",file)
         let arr = file.originalname.split(".");
         let newName = Date.now() + "." + arr[1];
         return cb(null, newName.toLowerCase());

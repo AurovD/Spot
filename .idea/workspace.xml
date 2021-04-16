@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="global changes coming">
+      <change afterPath="$PROJECT_DIR$/src/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/511.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/banner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/bootstrep_grid_1920 — копия.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/bootstrep_grid_1920 — копия7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Forms.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="JSX" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,12 +65,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\assets" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\public" />
@@ -108,7 +132,11 @@
       <workItem from="1617137020042" duration="6246000" />
       <workItem from="1617191285331" duration="33000" />
       <workItem from="1617546858715" duration="15323000" />
-      <workItem from="1618304423379" duration="3955000" />
+      <workItem from="1618304423379" duration="6293000" />
+      <workItem from="1618503160109" duration="5337000" />
+      <workItem from="1618511458520" duration="3657000" />
+      <workItem from="1618579111402" duration="9313000" />
+      <workItem from="1618604775928" duration="6573000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -173,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618313231770</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Are ready for git clone?">
+      <created>1618313845990</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618313845990</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

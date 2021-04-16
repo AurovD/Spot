@@ -5,8 +5,11 @@
     background-color: #E9EAF2;
 }
 .banner {
-    height: 400px;
-    background-color: #444
+    background-image: url("../../assets/Группа 2.png");
+    background-position: center top;
+    background-size: contain;
+    padding-bottom:100%;
+    background-repeat:no-repeat;
 }
 @media (max-width: 768px) {
     .main__container {

@@ -1,15 +1,22 @@
 .form__container {
     display: flex;
-    position: absolute;
-    top: 0;
     height: 100%;
-    width: 100vw;
-    /*backdrop-filter: blur(2px);*/
-    background-color: rgba(0, 0, 0, .9);
-    /*display: flex;*/
+    width: 100%;
+    background: url("../../assets/texture.png");
     padding-top: 150px;
     justify-content: center;
     z-index: 1;
+    position: relative;
+}
+.form__container::after {
+    content: "";
+    background: rgba(0,0,0, .5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -5;
 }
 .formBox {
     height: 700px;
@@ -26,7 +33,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    box-sizing: border-box;
 }
 .formBox::before {
     content: "SPOT";
@@ -35,7 +41,7 @@
     left: -400px;
     transform: rotate(-90deg);
     font-family: 'Montserrat', sans-serif;
-    color: #202020;
+    color: #1C1D22;
     font-size: 150pt;
     text-shadow: 1px 1px 2px black, 0 0 0.8em rgb(255, 101, 13);
     z-index: -1;

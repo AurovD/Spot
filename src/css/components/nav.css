@@ -4,6 +4,35 @@
     top: 0;
     height: 100vh;
     background-color: #1C1D22;
+    padding: 20px 50px;
+    z-index: 2;
+}
+.nav__container img {
+    cursor: pointer;
+}
+.navList {
+    position: relative;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+.navList:before {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #E9EAF2;
+}
+.navList_li {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.navList_a {
+    text-decoration: none;
+    color: #E9EAF2;
 }
 @media (max-width: 768px) {
     .nav__container {
