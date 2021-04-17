@@ -7,7 +7,7 @@ const Header = ({profile}) => {
         <header>
             <input type="text"/>
             <div className="header__profile">
-                {profile && <Link className="profile__button profile__button__create" to="/forms">Создать</Link>}
+                {profile && <Link className="profile__button profile__button__create" to="/create">Создать</Link>}
                 {
                     profile ?
                         <Link to="/profile" className="profile__name">

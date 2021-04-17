@@ -11,16 +11,14 @@
 body {
     font-family: 'Montserrat', 'Roboto', 'Open Sans', sans-serif;
     font-weight: 200;
-    overflow-x: hidden;
 }
-
 .container {
     position: relative;
-    width: 100vw;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 300px auto;
     background-color: #E9EAF2;
+    z-index: 0;
 }
 @media (max-width: 768px) {
     .container {

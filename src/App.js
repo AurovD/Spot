@@ -46,8 +46,7 @@ function App() {
             dispatch(setUser())
     }, [user]);
     return (
-        <div className="App" style={{position: "relative"}}>
-            <div className="container">
+        <div className="container">
                 <Nav />
                 <Header profile={user}/>
                 <Route path="/" component={Main} exact/>
@@ -57,7 +56,6 @@ function App() {
                     {/*<Route path="/login" component={() =>*/}
                     {/*    user ? <Redirect to="/"/> : <Profile setProfile={logIn} setNewProfile={createProfile}/>*/}
                     {/*}/>*/}
-            </div>
         </div>
     );
 }

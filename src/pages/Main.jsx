@@ -4,6 +4,9 @@ const Main = () => {
     return (
         <div className="main__container">
             <div className="banner"></div>
+            <div className="main">
+                uiuoiu
+            </div>
         </div>
     );
 }
