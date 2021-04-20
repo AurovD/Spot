@@ -35,9 +35,9 @@ const Forms = ({profile, setProfile, setNewProfile}) => {
     });
 
     const [body, setBody] = React.useState({
-        title: "",
-        description: "",
-        price: "",
+        title: "Test",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        price: 0,
         startDate: "",
         startTime: "",
         type: "",
@@ -276,16 +276,16 @@ const Forms = ({profile, setProfile, setNewProfile}) => {
                             <option value="Every_year">Ежегодно</option>
                         </select>
                     </div>
-                    <div className="form_groupbox">
-                        <div className="form-group">
-                            <label className="form-group_label">Старт продаж
-                                <input className="form_element form-element__double" type="date" /></label>
-                        </div>
-                        <div className="form-group">
-                            <label className="form-group_label">Окончание продаж
-                                <input className="form_element" type="date" /></label>
-                        </div>
-                    </div>
+                    {/*<div className="form_groupbox">*/}
+                    {/*    <div className="form-group">*/}
+                    {/*        <label className="form-group_label">Старт продаж*/}
+                    {/*            <input className="form_element form-element__double" type="date" /></label>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="form-group">*/}
+                    {/*        <label className="form-group_label">Окончание продаж*/}
+                    {/*            <input className="form_element" type="date" /></label>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <input className="button__submit" type="submit" value="Создать" onClick={sendForm}/>
                 </form>
             </div>}

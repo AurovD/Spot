@@ -1,6 +1,7 @@
 import {login} from "../actions/users";
 
 const initialState = {
+    id: "",
     user: ""
 };
 const users = (state = initialState, action) => {

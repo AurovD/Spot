@@ -16,7 +16,7 @@ body {
     position: relative;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 300px calc(100vw - 320px);
     background-color: #E9EAF2;
     z-index: 0;
 }

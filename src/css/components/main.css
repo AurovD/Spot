@@ -5,20 +5,15 @@
     z-index: inherit;
 }
 .banner {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background-image: url("../../assets/Группа 2.png");
-    background-position: center top;
+    background-image: url("../../assets/banner.jpg");
+    background-attachment: fixed;
     background-size: cover;
-    height: 500px;
+    background-position: center bottom;
+    height: 60vh;
     background-repeat:no-repeat;
-    z-index: -1;
 }
 .main {
     height: 400vh;
-    background-color: lightslategray;
-    z-index: 2;
 }
 @media (max-width: 768px) {
     .main__container {
