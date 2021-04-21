@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory, NavLink } from "react-router-dom";
-import Logo from "../assets/spot.svg";
+import Logo from "../assets/logo.png";
 
 const Nav = () => {
     const history = useHistory();

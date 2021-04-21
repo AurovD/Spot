@@ -41,7 +41,8 @@ const Forms = ({profile, setProfile, setNewProfile}) => {
         startDate: "",
         startTime: "",
         type: "",
-        periodic: ""
+        periodic: "",
+        user: profile
     });
 
     const sendForm = (e) => {
