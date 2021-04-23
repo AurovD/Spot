@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="Подправил дизайн, добавил шрифты, теперь и поспать можно">
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="Причесал дизайн, теперь можно и чай попить">
       <change afterPath="$PROJECT_DIR$/src/components/creating/StepOne/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/css/components/creating.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Create.jsx" afterDir="false" />
@@ -135,7 +135,7 @@
       <workItem from="1619078827899" duration="2429000" />
       <workItem from="1619112416025" duration="5016000" />
       <workItem from="1619173579409" duration="907000" />
-      <workItem from="1619192059865" duration="16204000" />
+      <workItem from="1619192059865" duration="16352000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -249,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619044072151</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Причесал дизайн, теперь можно и чай попить">
+      <created>1619213713686</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1619213713686</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +284,7 @@
     <MESSAGE value="Поработал с бд." />
     <MESSAGE value="Test" />
     <MESSAGE value="Подправил дизайн, добавил шрифты, теперь и поспать можно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подправил дизайн, добавил шрифты, теперь и поспать можно" />
+    <MESSAGE value="Причесал дизайн, теперь можно и чай попить" />
+    <option name="LAST_COMMIT_MESSAGE" value="Причесал дизайн, теперь можно и чай попить" />
   </component>
 </project>

@@ -157,7 +157,6 @@ input::-webkit-inner-spin-button {
     font-family: 'Montserrat', 'Roboto', 'Open Sans', sans-serif;
     width: 300px;
     height: 40px;
-    /*background-color: #19254D;*/
     background-color: #1C1D22;
     color: #E9EAF2;
     font-weight: 300;
@@ -204,7 +203,7 @@ select#list {
     background-color: #fff;
 }
 .stepBox__column select {
-    width: 615px;
+    width: 565px;
     height: 40px;
     border-radius: 7px;
     border: 2px solid #1C1D22;
