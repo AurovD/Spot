@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="Test">
-      <change afterPath="$PROJECT_DIR$/src/components/EventCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/components/eventCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/font.css" afterDir="false" />
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="Подправил дизайн, добавил шрифты, теперь и поспать можно">
+      <change afterPath="$PROJECT_DIR$/src/components/creating/StepOne/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/components/creating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Create.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/eventCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/forms.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/nav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Forms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Forms.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\components\creating\StepOne" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\assets" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\public" />
     </key>
@@ -131,7 +131,11 @@
       <workItem from="1618915165487" duration="1549000" />
       <workItem from="1618928947168" duration="5503000" />
       <workItem from="1618976697724" duration="5214000" />
-      <workItem from="1619034362007" duration="6270000" />
+      <workItem from="1619034362007" duration="6617000" />
+      <workItem from="1619078827899" duration="2429000" />
+      <workItem from="1619112416025" duration="5016000" />
+      <workItem from="1619173579409" duration="907000" />
+      <workItem from="1619192059865" duration="16204000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -238,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618929442580</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Подправил дизайн, добавил шрифты, теперь и поспать можно">
+      <created>1619044072151</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1619044072151</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +276,7 @@
     <MESSAGE value="Дизайн причесал, хохолок торчал. Исправил размеры и позиционирование" />
     <MESSAGE value="Поработал с бд." />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Подправил дизайн, добавил шрифты, теперь и поспать можно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подправил дизайн, добавил шрифты, теперь и поспать можно" />
   </component>
 </project>

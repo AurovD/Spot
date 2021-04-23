@@ -2,7 +2,7 @@ import React from 'react';
 import './css/App.css';
 import { useCookies } from 'react-cookie';
 import {Header, Nav} from "./components";
-import {Main, Profile, Forms} from "./pages";
+import {Main, Profile, Forms, Create} from "./pages";
 import {Route} from "react-router-dom";
 import {useDispatch, useSelector,} from "react-redux";
 import {createUser, login, setUser, removeUser} from "./redux/actions/users";
@@ -51,7 +51,8 @@ function App() {
                 <Header profile={user}/>
                 <Route path="/" component={Main} exact/>
                 <Route path="/profile" component={() => <Profile logout={logOut}/>} exact/>
-                <Route path="/:forms" component={() => <Forms profile={user} setProfile={logIn} setNewProfile={createProfile}/>} exact/>
+                <Route path="/create" component={() => <Create profile={user}/>} exact/>
+                <Route path="/auth" component={() => <Forms profile={user} setProfile={logIn} setNewProfile={createProfile}/>} exact/>
                     {/*<Route path="/create" component={Create} exact/>*/}
                     {/*<Route path="/login" component={() =>*/}
                     {/*    user ? <Redirect to="/"/> : <Profile setProfile={logIn} setNewProfile={createProfile}/>*/}

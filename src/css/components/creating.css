@@ -1,0 +1,212 @@
+.creatingPage_container {
+    height: 100%;
+    /*background-image: url("../../assets/create.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: top;*/
+    /*background-size: cover;*/
+    padding: 80px 50px;
+}
+.creatingPage_container h2 {
+    color: #1C1D22;
+    font-weight: 800;
+    font-size: 70px;
+}
+.header__create ul {
+    display: flex;
+    width: 600px;
+    height: 60px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+}
+.header__create ul:before {
+    position: absolute;
+    content: "";
+    width: 600px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1C1D22;
+}
+.header__create li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+.header__create li.active:before {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #1C1D22;
+}
+.form_create {
+    width: 1000px;
+    height: 630px;
+    margin-top: 30px;
+    border-radius: 7px;
+    background-color: #f0f1f8;
+    box-shadow: 5px 5px 8px -3px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    background-image: url("../../assets/create.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.stepBox {
+    position: relative;
+    height: 100%;
+}
+.stepBox__row {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.stepBox__column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.stepBox button{
+    font-family: 'Montserrat', 'Roboto', 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    background-color: #1C1D22;
+    border: none;
+    outline: none;
+    color: #E9EAF2;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.stepBox button:disabled{
+    opacity: 0.5;
+}
+.stepBox__element {
+    margin-bottom: 30px;
+}
+.stepBox__column label{
+    margin-bottom: 15px;
+}
+.stepBox__row label{
+    margin-right: 30px;
+}
+.stepBox__row input{
+    background-color: white;
+    outline: none;
+    border: 1px solid #1C1D22;
+    height: 40px;
+    width: 500px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 7px;
+}
+.stepBox__column input{
+    background-color: white;
+    outline: none;
+    border: 1px solid #1C1D22;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 7px;
+}
+.stepBox__column > textarea {
+    resize: none;
+    width: 615px;
+    outline: none;
+    height: 200px;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    border: 1px solid #1C1D22;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.input__fileBox {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+}
+.input__file-button {
+    font-family: 'Montserrat', 'Roboto', 'Open Sans', sans-serif;
+    width: 300px;
+    height: 40px;
+    /*background-color: #19254D;*/
+    background-color: #1C1D22;
+    color: #E9EAF2;
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.input__file-icon-wrapper {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+}
+input[type='radio'] {
+    display: none;
+}
+input[type='radio'] + label {
+    position: relative;
+    margin-left: 30px;
+}
+input[type='radio'] + label::before {
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, .0);
+    border: 2px solid #1C1D22;
+    box-sizing: border-box;
+}
+input[type='radio']:checked + label::before {
+    content: "✓";
+    font-size: 25px;
+    line-height: 20px;
+    color: #1C1D22;
+}
+select#list {
+    background-color: #fff;
+}
+.stepBox__column select {
+    width: 615px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #1C1D22;
+    padding-left: 20px;
+}

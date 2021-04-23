@@ -11,6 +11,7 @@
 @import "./components/main.css";
 @import "./components/forms.css";
 @import "./components/eventCard.css";
+@import "./components/creating.css";
 * {
     margin: 0;
     padding: 0;
