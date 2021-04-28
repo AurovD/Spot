@@ -11,7 +11,7 @@ const Header = ({profile}) => {
                 {
                     profile ?
                         <Link to="/profile" className="profile__name">
-                            {profile}
+                            {profile.name}
                         </Link> :
                         <Link className="profile__button profile__button__create" to="/auth">Войти</Link>
                 }

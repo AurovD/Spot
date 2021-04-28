@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="Причесал дизайн, теперь можно и чай попить">
-      <change afterPath="$PROJECT_DIR$/src/components/creating/StepOne/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/components/creating.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Create.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/eventCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/creating/StepOne/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/creating.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/creating.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Create.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Forms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Forms.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/forms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -135,7 +142,12 @@
       <workItem from="1619078827899" duration="2429000" />
       <workItem from="1619112416025" duration="5016000" />
       <workItem from="1619173579409" duration="907000" />
-      <workItem from="1619192059865" duration="16352000" />
+      <workItem from="1619192059865" duration="16472000" />
+      <workItem from="1619264213325" duration="248000" />
+      <workItem from="1619381342687" duration="1131000" />
+      <workItem from="1619387042502" duration="4162000" />
+      <workItem from="1619448614282" duration="96000" />
+      <workItem from="1619617704836" duration="20567000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -256,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619213713686</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Причесал дизайн, теперь можно и чай попить">
+      <created>1619213823790</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1619213823790</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,5 @@
 function userToken() {
-    const user = document.cookie.split("=")[1];
+    const user = JSON.parse(localStorage.getItem('user'));
     return user;
 }
 export const createUser = (body) => async () => {
@@ -27,7 +27,9 @@ export const login = (body) => async (dispatch) => {
     });
     let data = await res.json();
     if(data) {
-        document.cookie = "user" + "=" + data.data;
+        console.log(data.data)
+        // document.cookie = "user" + "=" + JSON.stringify(data.data);
+        localStorage.setItem('user', JSON.stringify(data.data));
         dispatch(setUser());
     }
 };
@@ -35,12 +37,6 @@ export const login = (body) => async (dispatch) => {
 export const setUser = () => ({
     type: 'SET_USER',
     data: userToken()
-});
-
-export const setForm = (value, string) => ({
-    type: 'SET_FORM',
-    value: value,
-    string: string
 });
 
 //актуальность курсов. вебинар ру

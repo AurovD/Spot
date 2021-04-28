@@ -1,25 +1,31 @@
 import React from 'react';
-import StepOne from "../components/creating/StepOne";
 import Upload from "../assets/upload.svg";
-import {useDispatch} from "react-redux";
-import {create} from "../redux/actions/events";
+import {useDispatch, useSelector} from "react-redux";
+import {create} from "../redux/actions/create";
 
-const CreatePage = () => {
+const CreatePage = ({id}) => {
     const dispatch = useDispatch();
     const [step, setStep] = React.useState(0);
     const [selectedFiles, setSelectedFiles] = React.useState([]);
     const [body, setBody] = React.useState({
         title: "Test",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        price: 0,
+        description: "Lorem ipsum dolor sit amet",
+        price: 10,
+        maxParticipants: 12,
         startDate: "",
         startTime: "",
         type: "",
         periodic: "",
         category: "",
-        tags: ""
+        tags: "",
+        user: id
     });
-    console.log(body);
+    let res = useSelector(({create}) => create.respond);
+    React.useEffect(() => {
+        if(res) {
+            setStep(res)
+        }
+    },[])
 
     const nextDisabled = !body.title || !body.description || !body.startDate || !body.startTime || !body.type || !body.periodic;
 
@@ -45,6 +51,19 @@ const CreatePage = () => {
             fd.append(k, typeof body[k] === "string" ? body[k] : JSON.stringify(body[k]));
         }
         dispatch(create(fd));
+        setBody({
+            title: "",
+            description: "",
+            price: 0,
+            maxParticipants: 12,
+            startDate: "",
+            startTime: "",
+            type: "",
+            periodic: "",
+            category: "",
+            tags: "",
+            user: id
+        })
     }
 
     return (
@@ -107,6 +126,17 @@ const CreatePage = () => {
                                             <span className="input__file-button-text">Превью</span>
                                         </label>
                                     </div>
+                                </div>
+                                <div className="stepBox__column">
+                                    <label>Кол.мест</label>
+                                    <input type="number" min="0" step="10" max="50" placeholder="Цена"
+                                           value={body.maxParticipants} onChange={e => {
+                                        const val = e.target.value;
+                                        setBody(prevState => {
+                                            return {...prevState, maxParticipants: val}
+                                        });
+                                    }}
+                                    />
                                 </div>
                             </div>
                             <button onClick={() => nextStep(1)}>Продолжить</button>
@@ -198,7 +228,7 @@ const CreatePage = () => {
                                     <option value="Tech">Интернет и технологии</option>
                                     <option value="Business">Бизнес</option>
                                     <option value="Entertainment_and_Art">Искусство и развлечения</option>
-                                    <option value="Health_and_sp0rt">Здоровье и спорт</option>
+                                    <option value="Health_and_sport">Здоровье и спорт</option>
                                     <option value="Beauty_style">Красота и стиль</option>
                                     <option value="Other">Другое</option>
                                 </select>
@@ -213,6 +243,12 @@ const CreatePage = () => {
                                 }}/>
                             </div>
                             <button disabled={nextDisabled} onClick={sendForm}>Создать событие</button>
+                        </div>
+                    }
+                    {
+                        step === "ok" &&
+                        <div className="stepBox respond">
+                            <h3>Событие создано!</h3>
                         </div>
                     }
                 </form>

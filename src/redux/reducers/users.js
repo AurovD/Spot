@@ -1,5 +1,3 @@
-import {login} from "../actions/users";
-
 const initialState = {
     id: "",
     user: ""

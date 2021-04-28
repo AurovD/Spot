@@ -1,5 +1,4 @@
-export const create = (body) => async () => {
-    console.log(body)
+export const create = (body) => async (dispatch) => {
     try {
         const res = await fetch("http://localhost:8001/api/createEvent", {
             method: "POST",
@@ -12,8 +11,14 @@ export const create = (body) => async () => {
         const data = await res.json();
         if(data) {
             alert(`${data.msg}`);
+            dispatch(getRes(data.msg));
         }
     } catch (err) {
         throw new Error(err);
     }
 };
+
+export const getRes = (res) => ({
+    type: 'SET_RESPONSE',
+    data: res
+});

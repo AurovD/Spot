@@ -1,7 +1,7 @@
 const pool = require("../models/bd");
 const signup = async (req, res) => {
     console.log("jhgkg", req.body)
-    pool.query("CREATE  TABLE IF NOT EXISTS users( id SERIAL PRIMARY KEY, name VARCHAR(200) NOT NULL, email VARCHAR(150) NOT NULL, pwd VARCHAR(200) NOT NULL, role TEXT DEFAULT 'user');", (err, res) => {
+    pool.query("CREATE  TABLE IF NOT EXISTS users( id SERIAL PRIMARY KEY, name VARCHAR(200) NOT NULL, email VARCHAR(150) UNIQUE, pwd VARCHAR(200) NOT NULL, role TEXT DEFAULT 'user');", (err, res) => {
         if(err) {
             console.log(err);
         } else {
@@ -25,7 +25,11 @@ const login = async (req, res) => {
         } else if (result) {
             console.log(result.rows);
             res.send({
-                data: result.rows[0].name
+                // data: result.rows[0].name
+                data: {
+                    id: result.rows[0].id,
+                    name: result.rows[0].name,
+                }
             });
         }
     });
