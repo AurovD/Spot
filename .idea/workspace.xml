@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="Причесал дизайн, теперь можно и чай попить">
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="БД, events">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/creating/StepOne/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/creating.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/creating.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Forms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Forms.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/forms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/abstract-653939_1920.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/create.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/md5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/music_2_2x_4x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sW1c8VZnQ_Q.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/spot.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Группа 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Группа 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Новый текстовый документ.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EventCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/creating.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/eventCard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/profile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/Montserrat/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/fonts/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Create.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Forms.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profil.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/create.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/create.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +202,11 @@
       <workItem from="1619381342687" duration="1131000" />
       <workItem from="1619387042502" duration="4162000" />
       <workItem from="1619448614282" duration="96000" />
-      <workItem from="1619617704836" duration="20567000" />
+      <workItem from="1619617704836" duration="20916000" />
+      <workItem from="1619708005514" duration="471000" />
+      <workItem from="1619905071322" duration="599000" />
+      <workItem from="1620003987344" duration="6000" />
+      <workItem from="1620297990585" duration="1304000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -275,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619213823790</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="БД, events">
+      <created>1619651095547</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1619651095547</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +370,7 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Подправил дизайн, добавил шрифты, теперь и поспать можно" />
     <MESSAGE value="Причесал дизайн, теперь можно и чай попить" />
-    <option name="LAST_COMMIT_MESSAGE" value="Причесал дизайн, теперь можно и чай попить" />
+    <MESSAGE value="БД, events" />
+    <option name="LAST_COMMIT_MESSAGE" value="БД, events" />
   </component>
 </project>
