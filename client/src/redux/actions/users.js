@@ -33,6 +33,15 @@ export const login = (body) => async (dispatch) => {
         dispatch(setUser());
     }
 };
+export const test = () => async () => {
+    let res = await fetch("http://localhost:8001/api/test", {
+        method: "GET"
+    });
+    let data = await res.json();
+    if(data) {
+        console.log(data)
+    }
+};
 
 export const setUser = () => ({
     type: 'SET_USER',

@@ -2,7 +2,7 @@ const pool = require("../models/bd");
 const multer = require('multer');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './');
+        cb(null, './public/images');
     },
     filename: function (req, file, cb) {
         let arr = file.originalname.split(".");

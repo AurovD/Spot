@@ -4,7 +4,7 @@ import {Header, Nav} from "./components";
 import {Main, Profile, Forms, Create} from "./pages";
 import {Route} from "react-router-dom";
 import {useDispatch, useSelector,} from "react-redux";
-import {createUser, login, setUser} from "./redux/actions/users";
+import {createUser, login, setUser, test} from "./redux/actions/users";
 
 function App() {
     const dispatch = useDispatch();
@@ -21,6 +21,9 @@ function App() {
     }
     React.useEffect(() => {
             dispatch(setUser())
+    }, []);
+    React.useEffect(() => {
+            dispatch(test())
     }, []);
     return (
         <div className="container">

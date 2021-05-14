@@ -34,5 +34,18 @@ const login = async (req, res) => {
         }
     });
 };
+const test = async (req, res) => {
+    console.log("kjhkhl")
+    pool.query('SELECT * FROM test', (err, result) => {
+        if (err) {
+            throw err;
+        } else if (result) {
+            console.log(result.rows);
+            res.send({
+                data: result.rows[0]
+            });
+        }
+    });
+};
 
-module.exports = {signup, login};
+module.exports = {signup, login, test};

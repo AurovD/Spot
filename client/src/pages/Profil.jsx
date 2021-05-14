@@ -7,6 +7,7 @@ const Profile = ({logout}) => {
             <Link to="/" onClick={event => {
                 logout();
             }}>Выход</Link>
+            <img src={`http://localhost:8001/images/1620303372014.jpg`} alt=""/>
         </div>
     );
 }
