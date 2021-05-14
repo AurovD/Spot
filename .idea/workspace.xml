@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="client folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +142,8 @@
       <workItem from="1620299647004" duration="3332000" />
       <workItem from="1620314982879" duration="339000" />
       <workItem from="1620916485303" duration="1502000" />
-      <workItem from="1620992607109" duration="2010000" />
+      <workItem from="1620992607109" duration="8144000" />
+      <workItem from="1621016993169" duration="867000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -289,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620994147590</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="client folder">
+      <created>1620994777826</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1620994777826</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
