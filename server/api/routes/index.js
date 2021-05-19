@@ -6,7 +6,7 @@ const parser = require("body-parser").json();
 const cors = require("cors");
 
 let corsOptions = {
-    origin: 'https://spot.aurovd.ru/',
+    origin: 'http://localhost:3001',
     optionsSuccessStatus: 200
 }
 
