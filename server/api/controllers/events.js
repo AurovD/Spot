@@ -68,4 +68,12 @@ const createEvent = async (req, res) => {
     });
 };
 
-module.exports = {createEvent};
+const fetchMainEvents = async (req, res) => {
+    pool.query("SELECT * FROM events WHERE  type = 'public' and status = false;", (req, results) => {
+        res.send({
+            events: results.rows
+        })
+    });
+};
+
+module.exports = {createEvent, fetchMainEvents};

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const EventCard = () => {
+const EventCard = ({ event }) => {
+    console.log(event)
     return (
         <div className="event_card">
             <div className="card__img">
@@ -18,7 +19,7 @@ const EventCard = () => {
                     <div className="circle"></div>
                     <div className="circle"></div>
                     <div className="circle"></div>
-                    <p>5.0</p>
+                    <p>12/12</p>
                 </div>
             </div>
         </div>

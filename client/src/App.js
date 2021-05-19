@@ -9,16 +9,22 @@ import {createUser, login, setUser, test} from "./redux/actions/users";
 function App() {
     const dispatch = useDispatch();
     let user = useSelector(({users}) => users.user);
-    const logIn= body =>{
+
+
+    const logIn = (body) => {
         dispatch(login(body));
     }
-    const createProfile = body =>{
+
+
+    const createProfile = React.useCallback((body) => {
         dispatch(createUser(body));
-    }
-    const logOut = () =>{
+    }, []);
+
+    const logOut = React.useCallback(() =>{
         localStorage.removeItem("user");
         dispatch(setUser());
-    }
+    }, [])
+
     React.useEffect(() => {
             dispatch(setUser())
     }, []);
