@@ -1,6 +1,6 @@
 export const create = (body) => async (dispatch) => {
     try {
-        const res = await fetch("http://localhost:8001/api/createEvent", {
+        const res = await fetch("https://api.aurovd.ru/api/createEvent", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
