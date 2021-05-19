@@ -37,8 +37,7 @@ export const test = () => async () => {
     let res = await fetch("http://localhost:3001/api/test", {
         method: "GET",
         headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json"
+            "Accept": "application/json"
         },
     });
     let data = await res.json();
