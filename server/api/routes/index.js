@@ -5,15 +5,9 @@ const evt = require("../controllers/events");
 const parser = require("body-parser").json();
 const cors = require("cors");
 
-let whitelist = ['http://spot.aurovd.ru']
 let corsOptions = {
-    origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    }
+    origin: 'http://spot.aurovd.ru',
+    optionsSuccessStatus: 200
 }
 
 router.post("/signup", parser, usr.signup);
