@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="events, test,">
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="test,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +147,7 @@
       <workItem from="1621261148170" duration="6735000" />
       <workItem from="1621272342195" duration="4046000" />
       <workItem from="1621423486395" duration="2160000" />
-      <workItem from="1621434382921" duration="2988000" />
+      <workItem from="1621434382921" duration="3712000" />
     </task>
     <task id="LOCAL-00001" summary="global changes coming">
       <created>1617126452872</created>
@@ -333,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621435719472</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="test,">
+      <created>1621437436498</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1621437436498</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +370,7 @@
     <MESSAGE value="БД, events" />
     <MESSAGE value="client folder" />
     <MESSAGE value="events, test," />
-    <option name="LAST_COMMIT_MESSAGE" value="events, test," />
+    <MESSAGE value="test," />
+    <option name="LAST_COMMIT_MESSAGE" value="test," />
   </component>
 </project>

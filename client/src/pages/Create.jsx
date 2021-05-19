@@ -22,13 +22,11 @@ const CreatePage = ({id}) => {
         user: id
     });
     let res = useSelector(({create}) => create.respond);
-    console.log("res", res)
     React.useEffect(() => {
         if(res) {
-            console.log("jkkhlh")
             setStep(3);
         }
-    },[step])
+    },[res])
 
     const nextDisabled = !body.title || !body.description || !body.startDate || !body.startTime || !body.type || !body.periodic;
 
