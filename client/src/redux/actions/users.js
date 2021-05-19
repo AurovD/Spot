@@ -6,6 +6,7 @@ export const createUser = (body) => async () => {
     let res = await fetch("http://localhost:8001/api/signup", {
         method: "POST",
         headers: {
+            'Access-Control-Allow-Origin':'*',
             "Accept": "application/json",
             "Content-Type": "application/json"
         },
