@@ -6,6 +6,7 @@ import {create} from "../redux/actions/create";
 const CreatePage = ({id}) => {
     const dispatch = useDispatch();
     const [step, setStep] = React.useState(0);
+    console.log(step)
     const [selectedFiles, setSelectedFiles] = React.useState([]);
     const [body, setBody] = React.useState({
         title: "Test",
@@ -21,11 +22,13 @@ const CreatePage = ({id}) => {
         user: id
     });
     let res = useSelector(({create}) => create.respond);
+    console.log("res", res)
     React.useEffect(() => {
         if(res) {
-            setStep(res)
+            console.log("jkkhlh")
+            setStep(3);
         }
-    },[])
+    },[step])
 
     const nextDisabled = !body.title || !body.description || !body.startDate || !body.startTime || !body.type || !body.periodic;
 
@@ -246,7 +249,7 @@ const CreatePage = ({id}) => {
                         </div>
                     }
                     {
-                        step === "ok" &&
+                        step === 3 &&
                         <div className="stepBox respond">
                             <h3>Событие создано!</h3>
                         </div>

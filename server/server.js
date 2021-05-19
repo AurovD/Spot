@@ -6,6 +6,10 @@ const app = express();
 const cors = require("cors");
 dotenv.config();
 
+
+app.get("/", (req, res) => {
+    res.send("test")
+})
 app.use(cors());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("./public"));

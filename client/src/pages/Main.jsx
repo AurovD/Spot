@@ -7,9 +7,9 @@ const Main = () => {
     const dispatch = useDispatch();
     const items = useSelector(({mainEvents}) => mainEvents.items);
     console.log(items)
-    React.useEffect(() => {
-        dispatch(fetchMainEvents())
-    }, []);
+    // React.useEffect(() => {
+    //     dispatch(fetchMainEvents())
+    // }, []);
 
     return (
         <div className="main__container">
