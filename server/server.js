@@ -19,9 +19,9 @@ app.use(cors());
 //         res.status(200);
 //     } next(); })
 
-app.get("/", (req, res) => {
-    res.send("test")
-});
+// app.get("/", (req, res) => {
+//     res.send("test")
+// });
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("./public"));
 app.use("/api", require("./api/routes/index"));

@@ -35,7 +35,10 @@ export const login = (body) => async (dispatch) => {
 };
 export const test = () => async () => {
     let res = await fetch("http://localhost:3001/api/test", {
-        method: "GET"
+        method: "GET",
+        headers: {
+            "Content-Type": "text/plain"
+        },
     });
     let data = await res.json();
     if(data) {
