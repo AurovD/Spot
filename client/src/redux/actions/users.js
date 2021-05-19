@@ -3,7 +3,7 @@ function userToken() {
     return user;
 }
 export const createUser = (body) => async () => {
-    let res = await fetch("http://localhost:8001/api/signup", {
+    let res = await fetch("https://api.aurovd.ru/api/signup", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -17,7 +17,7 @@ export const createUser = (body) => async () => {
     }
 };
 export const login = (body) => async (dispatch) => {
-    let res = await fetch("http://localhost:8001/api/login", {
+    let res = await fetch("https://api.aurovd.ru/api/login", {
         method: "POST",
         headers: {
             "Accept": "application/json",

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="test connection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,14 +149,7 @@
       <workItem from="1621423486395" duration="2160000" />
       <workItem from="1621434382921" duration="4544000" />
       <workItem from="1621439304973" duration="97000" />
-      <workItem from="1621456224525" duration="9178000" />
-    </task>
-    <task id="LOCAL-00002" summary="global changes coming">
-      <created>1617126540571</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1617126540571</updated>
+      <workItem from="1621456224525" duration="9403000" />
     </task>
     <task id="LOCAL-00003" summary="global changes coming">
       <created>1617126563386</created>
@@ -493,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621465774721</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="test connection">
+      <created>1621466011039</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1621466011039</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
