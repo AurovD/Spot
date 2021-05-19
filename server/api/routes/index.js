@@ -7,6 +7,7 @@ const cors = require('cors');
 
 let corsOptions = {
     origin: '*',
+    optionsSuccessStatus: 200
 }
 
 router.post("/signup", parser, usr.signup);
