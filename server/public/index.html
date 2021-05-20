@@ -21,11 +21,13 @@
             grid-template-columns: 1fr 2fr;
         }
         .leftBox {
-            background-image: url(https://media3.giphy.com/media/rzIOcIZEKeKiY/giphy.gif);
+            background-image: url(./banner.jpg);
             background-position: center;
             background-size: cover;
             position: relative;
             overflow: hidden;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
         }
         .rightBox {
             display: flex;
@@ -35,145 +37,52 @@
         }
         .text {
             position: relative;
-            z-index: 0;
-        }
-        .links {
-            text-align: right;
-        }
-        .link {
-            text-decoration: none;
-            font-size: 80px;
-            color: rgb(255, 101, 13);
-            font-weight: 900;
-        }
-        .aurovd {
-            color: #734428;
-        }
-        .rest {
-            color: black;
-            font-size: 80px;
-            font-weight: 100;
-        }
-        .api {
-            animation-name: wave-animation;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            animation-delay: 0s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-            transform-origin: center;
-            font-weight: 900;
-            font-size: 100px;
-            color: #1C1D22;
-        }
-        .circle {
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            top: -150px;
-            right: 60px;
-            z-index: -1;
-            background-color: #E9EAF2;
-            border-radius: 50%;
+            width: 100%;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
+            flex-direction: column;
+            padding: 100px 0;
+            box-sizing: border-box;
         }
-        .triangle {
+        .links {
+            text-align: center;
+        }
+        img {
             position: absolute;
-            top: -110px;
-            right: -30px;
-            width: 0;
-            height: 0;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            border-style: solid;
-            border-width: 50px 200px 50px 0;
-            border-color: transparent #007bff transparent transparent;
-            transform: rotate(-25deg);
+            top: 30px;
+            left: 30px;
+            width: 200px;
         }
-        .triangle p {
-            position: absolute;
-            right: -185px;
-            top: -22px;
-            font-size: 20px;
-            font-weight: 400;
+        .link {
+            text-decoration: none;
+            font-size: 50px;
+            color: #E9EAF2;
+            font-weight: 900;
         }
-        .br {
-            font-size: 14px;
+        .link:hover {
+            color: rgb(255, 101, 13);
         }
-        @keyframes wave-animation {
-            0% {
-                transform: rotate(0deg);
-            }
-            5% {
-                transform: rotate(-90deg);
-            }
-            20% {
-                transform: rotate(-180deg);
-            }
-            30% {
-                transform: rotate(90deg);
-            }
-            40% {
-                transform: rotate(180deg);
-            }
-            50% {
-                transform: rotate(12deg);
-            }
-            60% {
-                transform: rotate(-10deg);
-            }
-            70% {
-                transform: rotate(12deg);
-            }
-            80% {
-                transform: rotate(-10deg);
-            }
-            90% {
-                transform: rotate(9deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
+        h1 {
+            font-weight: 100;
+            font-size: 150px;
+            color: #E9EAF2;
         }
     </style>
 </head>
 <body>
-    <div class="leftBox">
-
-    </div>
+    <div class="leftBox"></div>
     <div class="rightBox">
         <div class="text">
-            <p class="rest">REST</p>
+            <img src="./logo.png" alt="logo">
+<!--            <p class="rest">REST</p>-->
             <div class="links">
-                <a href="https://spot.aurovd.ru/" class="link">SPOT.aurovd.ru</a><br>
-                <a href="https://aurovd.ru/" class="link aurovd">aurovd.ru</a>
-            </div>
-            <div class="circle">
-                <p class="api">API</p>
-            </div>
-            <div class="triangle">
-                <p class="click">ЖМИ!<br><span class="br">на ссылки</span></p>
+                <h1>Rest API</h1>
+                <a href="https://spot.aurovd.ru/" class="link">spot.aurovd.ru</a><br>
+                <a href="https://aurovd.ru/" class="link">aurovd.ru</a>
             </div>
         </div>
     </div>
-    <script>
-        let triangle = document.querySelector(".triangle");
-        let click = document.querySelector(".click");
-        let rest = document.querySelector(".rest");
-        let api = document.querySelector(".api");
-        const setBg = () => {
-            return  Math.floor(Math.random()*16777215).toString(16);
-        }
-        setInterval(() => triangle.style.borderColor = `transparent #${setBg()} transparent transparent`, 500);
-        setInterval(() => click.style.color = `#${setBg()}`, 300);
-        setInterval(() => rest.style.color = `#${setBg()}`, 300);
-        setInterval(() => api.style.color = `#${setBg()}`, 300);
-    </script>
 </body>
 </html>
