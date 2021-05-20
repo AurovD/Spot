@@ -7,9 +7,7 @@ const cors = require("cors");
 dotenv.config();
 app.use(cors());
 
-app.get("/", (req, res) => {
-    res.send("test")
-});
+app.get("/");
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("./public"));
 app.use("/api", require("./api/routes/index"));
