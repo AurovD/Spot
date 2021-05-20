@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="test connection">
-      <change afterPath="$PROJECT_DIR$/server/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/models/tasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/images/1620303372014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/images/1621436550638.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/images/aTWmsw3ggU0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="api page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,14 +149,7 @@
       <workItem from="1621439304973" duration="97000" />
       <workItem from="1621456224525" duration="11984000" />
       <workItem from="1621472183866" duration="253000" />
-      <workItem from="1621507250152" duration="11401000" />
-    </task>
-    <task id="LOCAL-00006" summary="logout fixed">
-      <created>1617566844074</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1617566844074</updated>
+      <workItem from="1621507250152" duration="11597000" />
     </task>
     <task id="LOCAL-00007" summary="Are ready for git clone?">
       <created>1618304625897</created>
@@ -504,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621466671417</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="api page">
+      <created>1621518811354</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1621518811354</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,6 +529,7 @@
     <MESSAGE value="test," />
     <MESSAGE value="cors" />
     <MESSAGE value="test connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="test connection" />
+    <MESSAGE value="api page" />
+    <option name="LAST_COMMIT_MESSAGE" value="api page" />
   </component>
 </project>
