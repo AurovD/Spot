@@ -11,15 +11,15 @@ let corsOptions = {
     optionsSuccessStatus: 200
 }
 
-// router.post("/signup", cors(corsOptions), parser, usr.signup);
-// router.post("/login", cors(corsOptions), parser, usr.login);
-// router.get("/test", cors(corsOptions), parser, usr.test);
-// router.post("/createEvent", cors(corsOptions), parser, evt.createEvent);
-// router.get("/fetchMainEvents", cors(corsOptions), parser, evt.fetchMainEvents);
-// module.exports = router;
-router.post("/signup", parser, usr.signup);
-router.post("/login", parser, usr.login);
-router.get("/test", parser, usr.test);
-router.post("/createEvent", parser, evt.createEvent);
-router.get("/fetchMainEvents", parser, evt.fetchMainEvents);
+router.post("/signup", cors(corsOptions), parser, usr.signup);
+router.post("/login", cors(corsOptions), parser, usr.login);
+router.get("/test", cors(corsOptions), parser, usr.test);
+router.post("/createEvent", cors(corsOptions), parser, evt.createEvent);
+router.get("/fetchMainEvents", cors(corsOptions), parser, evt.fetchMainEvents);
 module.exports = router;
+// router.post("/signup", parser, usr.signup);
+// router.post("/login", parser, usr.login);
+// router.get("/test", parser, usr.test);
+// router.post("/createEvent", parser, evt.createEvent);
+// router.get("/fetchMainEvents", parser, evt.fetchMainEvents);
+// module.exports = router;
