@@ -13,3 +13,5 @@ app.use(express.static("./public"));
 app.use("/api", require("./api/routes/index"));
 
 app.listen(port);
+
+// proxy_set_header Access-Control-Allow-Origin *;
