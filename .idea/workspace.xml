@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="api page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,14 +160,7 @@
       <workItem from="1621578350044" duration="4503000" />
       <workItem from="1621606044730" duration="203000" />
       <workItem from="1621718938098" duration="108000" />
-      <workItem from="1621719271225" duration="1447000" />
-    </task>
-    <task id="LOCAL-00011" summary="Дизайн причесал, код улучшил, теперь можно и чай попить">
-      <created>1618613436766</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1618613436766</updated>
+      <workItem from="1621719271225" duration="3016000" />
     </task>
     <task id="LOCAL-00012" summary="Дизайн причесал, хохолок торчал. Исправил размеры и позиционирование">
       <created>1618682847848</created>
@@ -504,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621720571701</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="api page">
+      <created>1621720745659</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1621720745659</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
