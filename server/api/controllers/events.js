@@ -69,7 +69,7 @@ const createEvent = async (req, res) => {
 };
 
 const fetchMainEvents = async (req, res) => {
-    pool.query("SELECT * FROM events WHERE  type = 'public' and status = false;", (req, results) => {
+    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE  events.type = 'public' and events.status = false;", (req, results) => {
         res.send({
             events: results.rows
         })

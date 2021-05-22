@@ -7,9 +7,9 @@ const EventCard = ({ event }) => {
             <div className="card__img">
             </div>
             <div className="card_infoText">
-                <h3>Lorem ipsum dolor</h3>
+                <h3>{event.title}</h3>
                 <p>12 ноября 2056 года 19:00 (мск)</p>
-                <a href="">Аюров Дмитрий</a>
+                <a href="">{event.name}</a>
             </div>
             <div className="card_footer">
                 <button>Участвовать</button>

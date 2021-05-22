@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="api page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/EventCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/api.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,14 +161,11 @@
       <workItem from="1621472183866" duration="253000" />
       <workItem from="1621507250152" duration="12348000" />
       <workItem from="1621519977769" duration="28000" />
-      <workItem from="1621520187090" duration="1462000" />
-    </task>
-    <task id="LOCAL-00008" summary="Are ready for git clone?">
-      <created>1618312857293</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1618312857293</updated>
+      <workItem from="1621520187090" duration="1944000" />
+      <workItem from="1621578350044" duration="4503000" />
+      <workItem from="1621606044730" duration="203000" />
+      <workItem from="1621718938098" duration="108000" />
+      <workItem from="1621719271225" duration="56000" />
     </task>
     <task id="LOCAL-00009" summary="Are ready for git clone?">
       <created>1618313231770</created>
@@ -499,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621518994677</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="api page">
+      <created>1621521706833</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1621521706833</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
