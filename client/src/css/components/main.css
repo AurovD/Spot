@@ -28,6 +28,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    min-height: 100px;
+    box-sizing: border-box;
+    align-content: flex-start;
 }
 .main_filter {
     padding: 10px;
