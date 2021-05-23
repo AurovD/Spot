@@ -49,12 +49,11 @@ const createEvent = async (req, res) => {
                     pool.query("CREATE TABLE IF NOT EXISTS tags_events( id SERIAL PRIMARY KEY,  id_tag INT REFERENCES tags (id), id_event INT REFERENCES events (id));");
                     tagsList.forEach( tag => {
                         pool.query("INSERT INTO tags (name) VALUES ($1);", [tag], (exs, data) => {
-                            console.log(exs, data);
-                            if(exs.code && exs.code === "23505"){
-                                console.log("exs", exs.code)
-                                pool.query("INSERT INTO tags_events(id_tag, id_event) VALUES ((SELECT id FROM tags WHERE name = $1), $2);", [tag, result.rows[0].id]);
-                            } else if (data) {
+                            if (data) {
                                 console.log("data", data);
+                                pool.query("INSERT INTO tags_events(id_tag, id_event) VALUES ((SELECT id FROM tags WHERE name = $1), $2);", [tag, result.rows[0].id]);
+                            } else if(exs.code && exs.code === "23505"){
+                                console.log("exs", exs.code)
                                 pool.query("INSERT INTO tags_events(id_tag, id_event) VALUES ((SELECT id FROM tags WHERE name = $1), $2);", [tag, result.rows[0].id]);
                             }
                         });

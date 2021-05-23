@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="users events, registration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/EventCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,13 +162,6 @@
       <workItem from="1621719271225" duration="6626000" />
       <workItem from="1621764171271" duration="9871000" />
       <workItem from="1621784223121" duration="15439000" />
-    </task>
-    <task id="LOCAL-00016" summary="Подправил дизайн, добавил шрифты, теперь и поспать можно">
-      <created>1619044072151</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1619044072151</updated>
     </task>
     <task id="LOCAL-00017" summary="Причесал дизайн, теперь можно и чай попить">
       <created>1619213713686</created>
@@ -508,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621724119676</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="users events, registration">
+      <created>1621804434920</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1621804434920</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,6 +542,7 @@
     <MESSAGE value="cors" />
     <MESSAGE value="test connection" />
     <MESSAGE value="api page" />
-    <option name="LAST_COMMIT_MESSAGE" value="api page" />
+    <MESSAGE value="users events, registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="users events, registration" />
   </component>
 </project>
