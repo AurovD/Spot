@@ -25,11 +25,11 @@ const Nav = ({id}) => {
                         Профиль
                     </NavLink>
                 </li>}
-                <li className="navList_li active">
+                {user && <li className="navList_li active">
                     <NavLink to="/events" className="navList_a">
                         События
                     </NavLink>
-                </li>
+                </li>}
                 <li className="navList_li active">
                     <NavLink to="/" className="navList_a">
                         Подписки
