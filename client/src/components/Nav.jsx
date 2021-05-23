@@ -1,9 +1,12 @@
 import React from 'react';
 import { useHistory, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
+import {useSelector} from "react-redux";
 
-const Nav = () => {
+const Nav = ({id}) => {
     const history = useHistory();
+    let user = useSelector(({users}) => users.user);
+
     return (
         <nav className="nav__container">
             {/*<Link to="/" className="nav__container__logo">*/}
@@ -17,29 +20,29 @@ const Nav = () => {
                         Главная
                     </NavLink>
                 </li>
+                {user && <li className="navList_li active">
+                    <NavLink to={`/profile/${user.id}`} className="navList_a">
+                        Профиль
+                    </NavLink>
+                </li>}
                 <li className="navList_li active">
-                    <NavLink to="/" className="navList_a">
-                        Главная
+                    <NavLink to="/events" className="navList_a">
+                        События
                     </NavLink>
                 </li>
                 <li className="navList_li active">
                     <NavLink to="/" className="navList_a">
-                        Главная
+                        Подписки
                     </NavLink>
                 </li>
                 <li className="navList_li active">
                     <NavLink to="/" className="navList_a">
-                        Главная
+                        Сообщения
                     </NavLink>
                 </li>
                 <li className="navList_li active">
                     <NavLink to="/" className="navList_a">
-                        Главная
-                    </NavLink>
-                </li>
-                <li className="navList_li active">
-                    <NavLink to="/" className="navList_a">
-                        Главная
+                        Уведомления
                     </NavLink>
                 </li>
             </ul>

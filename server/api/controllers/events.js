@@ -69,11 +69,28 @@ const createEvent = async (req, res) => {
 };
 
 const fetchMainEvents = async (req, res) => {
-    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE  events.type = 'public' and events.status = false;", (req, results) => {
+    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE  events.type = 'public' and events.status = false ORDER by id;", (req, results) => {
         res.send({
             events: results.rows
         })
     });
 };
+const fetchHistoryEvents = async (req, res) => {
+    console.log(req.body)
+    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE events.id IN (SELECT idevent FROM userHistory WHERE iduser = $1);", [req.body.user], (req, results) => {
+        if(results){
+            res.send({
+                events: results.rows
+            })
+        }
+    });
+};
+const eventReg = async (req, res) => {
+    console.log("hello", req.body);
+    pool.query("CREATE TABLE IF NOT EXISTS userHistory(id SERIAL PRIMARY KEY, idUser INT REFERENCES users (id), idEvent INT REFERENCES events (id));");
+    pool.query("INSERT INTO userHistory (idUser, idEvent) VALUES ($1, $2);", [req.body.id, req.body.idEvent]);
+    pool.query("UPDATE events SET members = array_append(members , $1) WHERE id = $2;", [req.body.id, req.body.idEvent]);
+    res.send({msg: "done"});
+};
 
-module.exports = {createEvent, fetchMainEvents};
+module.exports = {createEvent, fetchMainEvents, eventReg, fetchHistoryEvents };

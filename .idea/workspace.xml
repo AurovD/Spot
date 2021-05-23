@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="api page">
+      <change afterPath="$PROJECT_DIR$/client/src/components/EventsBox.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/EventCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/eventCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/mainEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/mainEvents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +34,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="JSX" />
       </list>
     </option>
   </component>
@@ -157,14 +179,9 @@
       <workItem from="1621578350044" duration="4503000" />
       <workItem from="1621606044730" duration="203000" />
       <workItem from="1621718938098" duration="108000" />
-      <workItem from="1621719271225" duration="4799000" />
-    </task>
-    <task id="LOCAL-00015" summary="Test">
-      <created>1618929442580</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1618929442580</updated>
+      <workItem from="1621719271225" duration="6626000" />
+      <workItem from="1621764171271" duration="9871000" />
+      <workItem from="1621784223121" duration="15439000" />
     </task>
     <task id="LOCAL-00016" summary="Подправил дизайн, добавил шрифты, теперь и поспать можно">
       <created>1619044072151</created>
@@ -502,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621724104405</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="api page">
+      <created>1621724119676</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1621724119676</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

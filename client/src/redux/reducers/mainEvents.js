@@ -20,4 +20,5 @@ const mainEvents = (state = initialState, action) => {
             return state;
     }
 };
+
 export default mainEvents;

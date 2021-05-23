@@ -19,11 +19,11 @@ const signup = async (req, res) => {
     });
 };
 const login = async (req, res) => {
+    console.log(req.body)
     pool.query('SELECT * FROM users WHERE email = $1 AND pwd = $2', [req.body.email, req.body.pass], (err, result) => {
         if (err) {
             throw err;
         } else if (result) {
-            console.log(result.rows);
             res.send({
                 // data: result.rows[0].name
                 data: {

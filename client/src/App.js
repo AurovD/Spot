@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/App.css';
 import {Header, Nav} from "./components";
-import {Main, Profile, Forms, Create} from "./pages";
+import {Main, Profile, Forms, Create, Event, Events} from "./pages";
 import {Route} from "react-router-dom";
 import {useDispatch, useSelector,} from "react-redux";
 import {createUser, login, setUser, test} from "./redux/actions/users";
@@ -9,7 +9,7 @@ import {createUser, login, setUser, test} from "./redux/actions/users";
 function App() {
     const dispatch = useDispatch();
     let user = useSelector(({users}) => users.user);
-
+    console.log(user)
 
     const logIn = (body) => {
         dispatch(login(body));
@@ -36,8 +36,10 @@ function App() {
                 <Nav />
                 <Header profile={user}/>
                 <Route path="/" component={Main} exact/>
-                <Route path="/profile" component={() => <Profile logout={logOut}/>} exact/>
+                <Route path="/profile/:id" component={() => <Profile logout={logOut} profile={user}/>} exact/>
                 <Route path="/create" component={() => <Create id={user.id}/>} exact/>
+                <Route path="/event/:id" component={() => <Event/>} exact/>
+                <Route path="/events" component={() => <Events profile={user}/>} exact/>
                 <Route path="/auth" component={() => <Forms setProfile={logIn} setNewProfile={createProfile}/>} exact/>
                     {/*<Route path="/create" component={Create} exact/>*/}
                     {/*<Route path="/login" component={() =>*/}

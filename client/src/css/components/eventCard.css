@@ -9,7 +9,7 @@
 }
 .card__img {
     height: 150px;
-    background-image: url("../../assets/abstract-653939_1920.jpg");
+    /*background-image: url("../../assets/abstract-653939_1920.jpg");*/
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: inherit;
@@ -37,6 +37,7 @@
     font-weight: 400;
     font-size: 14px;
     text-decoration: none;
+    cursor: pointer;
 }
 .card_footer {
     padding: 10px;
@@ -52,6 +53,7 @@
     border: none;
     border-radius: 5px;
     color: #E9EAF2;
+    cursor: pointer;
 }
 .card_rating {
     display: flex;
@@ -68,4 +70,7 @@
     height: 8px;
     border-radius: 8px;
     background-color: rgb(255, 101, 13);
+}
+.circle_grey {
+    background-color: #746D69;
 }
