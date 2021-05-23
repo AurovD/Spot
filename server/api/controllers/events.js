@@ -27,7 +27,6 @@ const createEvent = async (req, res) => {
         } else if (!req.files) {
             return res.send({ "msg": 'Please select an image to upload' });
         } else {
-            console.log("jhgkg", req.body, req.files);
             pool.query("CREATE TABLE IF NOT EXISTS events(id SERIAL PRIMARY KEY, title VARCHAR(200), description TEXT, price INT, bannerURL VARCHAR(200), countGuests SMALLINT, dateStart DATE, timeStart TIME WITH TIME ZONE, type VARCHAR(50), status BOOLEAN DEFAULT false, periodic VARCHAR(100), idCreator INT REFERENCES users (id), admins INT[], members INT [], category VARCHAR(100), tags VARCHAR(50)[]);");
             pool.query('INSERT INTO events (title, description, price, countGuests, dateStart, timeStart, type, periodic, category) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING id', [req.body.title, req.body.description, req.body.price, req.body.maxParticipants, req.body.startDate, req.body.startTime, req.body.type, req.body.periodic, req.body.category], (err, result) => {
                 if (err) {
@@ -50,7 +49,8 @@ const createEvent = async (req, res) => {
                     pool.query("CREATE TABLE IF NOT EXISTS tags_events( id SERIAL PRIMARY KEY,  id_tag INT REFERENCES tags (id), id_event INT REFERENCES events (id));");
                     tagsList.forEach( tag => {
                         pool.query("INSERT INTO tags (name) VALUES ($1);", [tag], (exs, data) => {
-                            if(exs.code === "23505"){
+                            console.log(exs, data);
+                            if(exs.code && exs.code === "23505"){
                                 console.log("exs", exs.code)
                                 pool.query("INSERT INTO tags_events(id_tag, id_event) VALUES ((SELECT id FROM tags WHERE name = $1), $2);", [tag, result.rows[0].id]);
                             } else if (data) {

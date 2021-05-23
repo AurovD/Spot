@@ -53,5 +53,3 @@ export const setUser = () => ({
     type: 'SET_USER',
     data: userToken()
 });
-
-//актуальность курсов. вебинар ру

@@ -18,9 +18,8 @@ export const fetchMainEvents = () => async (dispatch) => {
     }
 };
 export const fetchHistoryEvents = (body) => async (dispatch) => {
-    console.log(body)
     try {
-        const res = await fetch("https://api.aurovd.ru/api/fetchMainEvents", {
+        const res = await fetch("https://api.aurovd.ru/api/fetchHistoryEvents", {
         // const res = await fetch("http://localhost:8001/api/fetchHistoryEvents", {
             method: "POST",
             headers: {
@@ -46,7 +45,7 @@ export const setMainEvents = (items) => ({
 
 export const eventReg = (body) => async (dispatch) => {
     try {
-        const res = await fetch("https://api.aurovd.ru/api/fetchMainEvents", {
+        const res = await fetch("https://api.aurovd.ru/api/eventReg", {
         // const res = await fetch("http://localhost:8001/api/eventReg", {
             method: "POST",
             headers: {
