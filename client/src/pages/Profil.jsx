@@ -13,7 +13,7 @@ const Profile = ({logout, profile}) => {
                     }}>Выход</Link>
                 </div>
                 :
-                <div>jhklhl</div>
+                <div>Чужой профиль</div>
             /*<img src={`http://localhost:8001/images/1620303372014.jpg`} alt=""/>*/}
         </div>
     );

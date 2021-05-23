@@ -29,7 +29,6 @@ const EventCard = ({ event }) => {
     const dispatch = useDispatch();
     const history = useHistory();
     let user = useSelector(({users}) => users.user);
-    console.log(event)
 
     let circles = []
     let num = getPersent(event.members, event.countguests);

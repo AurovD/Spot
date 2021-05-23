@@ -6,7 +6,6 @@ import {create} from "../redux/actions/create";
 const CreatePage = ({id}) => {
     const dispatch = useDispatch();
     const [step, setStep] = React.useState(0);
-    console.log(step)
     const [selectedFiles, setSelectedFiles] = React.useState([]);
     const [body, setBody] = React.useState({
         title: "Test",
