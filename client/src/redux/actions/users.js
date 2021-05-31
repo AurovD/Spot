@@ -29,8 +29,6 @@ export const login = (body) => async (dispatch) => {
     });
     let data = await res.json();
     if(data) {
-        console.log(data.data)
-        // document.cookie = "user" + "=" + JSON.stringify(data.data);
         localStorage.setItem('user', JSON.stringify(data.data));
         dispatch(setUser());
     }

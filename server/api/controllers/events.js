@@ -69,9 +69,11 @@ const createEvent = async (req, res) => {
 
 const fetchMainEvents = async (req, res) => {
     pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE  events.type = 'public' and events.status = false ORDER by id;", (req, results) => {
-        res.send({
-            events: results.rows
-        })
+        if(results){
+            res.send({
+                events: results.rows
+            })
+        }
     });
 };
 const fetchHistoryEvents = async (req, res) => {

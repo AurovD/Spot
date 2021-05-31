@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="users events, registration">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Aside.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/VideoConf.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/css/components/auth.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/eventCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Create.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +28,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="JSX" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -162,13 +177,13 @@
       <workItem from="1621719271225" duration="6626000" />
       <workItem from="1621764171271" duration="9871000" />
       <workItem from="1621784223121" duration="15439000" />
-    </task>
-    <task id="LOCAL-00019" summary="БД, events">
-      <created>1619651095547</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1619651095547</updated>
+      <workItem from="1621840738170" duration="1813000" />
+      <workItem from="1621847148547" duration="30000" />
+      <workItem from="1621961890034" duration="3110000" />
+      <workItem from="1621973988916" duration="308000" />
+      <workItem from="1622398640434" duration="1562000" />
+      <workItem from="1622448191155" duration="1345000" />
+      <workItem from="1622459336347" duration="11263000" />
     </task>
     <task id="LOCAL-00020" summary="client folder">
       <created>1620299864210</created>
@@ -506,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621806038765</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="users events, registration">
+      <created>1621806502592</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1621806502592</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -12,6 +12,7 @@
 @import "./components/forms.css";
 @import "./components/eventCard.css";
 @import "./components/creating.css";
+@import "./components/profile.css";
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +28,42 @@ body {
     grid-template-columns: 300px calc(100vw - 320px);
     background-color: #E9EAF2;
     z-index: 0;
+}
+.main_profile {
+    background-color:#F0F1F8;
+    margin: 80px;
+}
+.aside {
+    background-color: #1C1D22;
+    height: 100vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
+}
+.main__container {
+    grid-column: 2 /3;
+    position: relative;
+    z-index: inherit;
+}
+.main {
+    display: grid;
+    grid-template-columns: auto 250px;
+    border-radius: 15px;
+    background-color: #E9EAF2;
+    z-index: 1;
+    padding: 80px 50px;
+    gap: 20px;
+}
+.board {
+    height: 500px;
+    background-color: #F0F1F8;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
+}
+.main_header {
+    height: 200px;
+    border-bottom: 1px solid #1C1D22;
+    border-radius: 15px 15px 0 0;
+    display: flex;
 }
 @media (max-width: 768px) {
     .container {

@@ -11,7 +11,6 @@ export const create = (body) => async (dispatch) => {
         });
         const data = await res.json();
         if(data) {
-            alert(`${data.msg}`);
             dispatch(getRes(data.msg));
         }
     } catch (err) {

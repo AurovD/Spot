@@ -26,6 +26,13 @@ const CreatePage = ({id}) => {
             setStep(3);
         }
     },[res])
+    React.useEffect(() => {
+        if(step === 3) {
+            setTimeout( () => {
+                setStep(1);
+            }, 5000);
+        }
+    },[step])
 
     const nextDisabled = !body.title || !body.description || !body.startDate || !body.startTime || !body.type || !body.periodic;
 
@@ -65,6 +72,8 @@ const CreatePage = ({id}) => {
             user: id
         })
     }
+
+
 
     return (
         <div className="main__container">

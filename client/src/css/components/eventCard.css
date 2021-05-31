@@ -3,9 +3,7 @@
     height: 290px;
     background-color: #1C1D22;
     border-radius: 15px;
-    -webkit-box-shadow: 11px 11px 12px -8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 11px 11px 12px -8px rgba(0, 0, 0, 0.6);
-    box-shadow: 11px 11px 12px -8px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
 }
 .card__img {
     height: 150px;

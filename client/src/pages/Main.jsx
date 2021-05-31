@@ -1,5 +1,5 @@
 import React from 'react';
-import {EventsBox} from "../components";
+import {EventsBox, Aside} from "../components";
 import {fetchMainEvents} from "../redux/actions/events";
 import {useDispatch, useSelector} from "react-redux";
 
@@ -13,12 +13,9 @@ const Main = () => {
     return (
         <div className="main__container">
             <div className="banner"></div>
-            <div className="main">
+            <div className="main" style={{marginTop: "-15px"}}>
                 <EventsBox items={items}/>
-                <div className="main_filter">
-                    <div className="filter">
-                    </div>
-                </div>
+                <Aside/>
             </div>
         </div>
     );

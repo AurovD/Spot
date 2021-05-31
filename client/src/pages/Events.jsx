@@ -1,21 +1,24 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {fetchHistoryEvents} from "../redux/actions/events";
-import {EventsBox} from "../components";
+import {EventsBox, Aside} from "../components";
 
 const Events= ({profile}) => {
-    console.log(profile);
     const dispatch = useDispatch();
     const items = useSelector(({mainEvents}) => mainEvents.items);
-    console.log("hhh", items)
     React.useEffect(() => {
         dispatch(fetchHistoryEvents({user: profile.id}))
     }, []);
 
     return (
-        <div className="main__container" style={{padding: "80px"}}>
-            <div>Текущие</div>
-            <EventsBox items={items}/>
+        <div className="main__container">
+            <div className="main">
+                <div className="board">
+                    <div>Текущие</div>
+                    <EventsBox items={items}/>
+                </div>
+                <Aside/>
+            </div>
         </div>
     );
 }
