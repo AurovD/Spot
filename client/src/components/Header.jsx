@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Header = ({profile}) => {
     return (
         <header>
-            <input type="text"/>
+            <input type="text" placeholder="Поиск"/>
             <div className="header__profile">
                 {profile && <Link className="profile__button profile__button__create" to="/create">Создать</Link>}
                 {

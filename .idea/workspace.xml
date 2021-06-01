@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="profile, styles" />
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="rofl">
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,14 +169,7 @@
       <workItem from="1622448191155" duration="1345000" />
       <workItem from="1622459336347" duration="11601000" />
       <workItem from="1622477014347" duration="15000" />
-      <workItem from="1622579735960" duration="32000" />
-    </task>
-    <task id="LOCAL-00021" summary="client folder">
-      <created>1620994147590</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1620994147590</updated>
+      <workItem from="1622579735960" duration="429000" />
     </task>
     <task id="LOCAL-00022" summary="client folder">
       <created>1620994777826</created>
@@ -512,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622472546365</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="rofl">
+      <created>1622579885668</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1622579885672</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,6 +552,7 @@
     <MESSAGE value="api page" />
     <MESSAGE value="users events, registration" />
     <MESSAGE value="profile, styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile, styles" />
+    <MESSAGE value="rofl" />
+    <option name="LAST_COMMIT_MESSAGE" value="rofl" />
   </component>
 </project>
