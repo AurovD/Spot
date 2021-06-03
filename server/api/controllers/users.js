@@ -1,6 +1,8 @@
 const pool = require("../models/bd");
+const { v4: uuidv4 } = require('uuid');
+
+
 const signup = async (req, res) => {
-    console.log("jhgkg", req.body)
     pool.query("CREATE  TABLE IF NOT EXISTS users( id SERIAL PRIMARY KEY, name VARCHAR(200) NOT NULL, email VARCHAR(150) UNIQUE, pwd VARCHAR(200) NOT NULL, role TEXT DEFAULT 'user', description TEXT);", (err, res) => {
         if(res) {
             pool.query("CREATE  TABLE IF NOT EXISTS rating(id SERIAL PRIMARY KEY, iduser INT, one INT, two INT, three INT, four INT, five INT);");
@@ -42,7 +44,7 @@ const test = async (req, res) => {
     //         });
     //     }
     // });
-    res.send({answer: "test"})
+    res.send({answer: `Hello`})
 };
 
 module.exports = {signup, login, test};

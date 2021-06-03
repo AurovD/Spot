@@ -18,6 +18,7 @@ router.post("/createEvent", cors(corsOptions), parser, evt.createEvent);
 router.get("/fetchMainEvents", cors(corsOptions), parser, evt.fetchMainEvents);
 router.post("/eventReg", cors(corsOptions), parser, evt.eventReg);
 router.post("/fetchHistoryEvents", cors(corsOptions), parser, evt.fetchHistoryEvents);
+router.post("/event", cors(corsOptions), parser, evt.event);
 module.exports = router;
 // router.post("/signup", parser, usr.signup);
 // router.post("/login", parser, usr.login);

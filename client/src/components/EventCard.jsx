@@ -53,7 +53,7 @@ const EventCard = ({ event }) => {
 
     return (
         <div className="event_card">
-            <div className="card__img" style={{backgroundImage: `url(${event.bannerurl ? "http://localhost:8001/images/"+event.bannerurl : DefaultImg})`}}>
+            <div className="card__img" onClick={() => history.push(`/event/${event.id}`)} style={{backgroundImage: `url(${event.bannerurl ? "http://localhost:8001/images/"+event.bannerurl : DefaultImg})`}}>
             </div>
             <div className="card_infoText">
                 <h3 onClick={() => history.push(`/event/${event.id}`)}>{event.title}</h3>

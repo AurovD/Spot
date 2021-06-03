@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/App.css';
 import {Header, Nav} from "./components";
-import {Main, Profile, Forms, Create, Event, Events} from "./pages";
+import {Main, Profile, Forms, Create, Event, Events, Room} from "./pages";
 import {Route} from "react-router-dom";
 import {useDispatch, useSelector,} from "react-redux";
 import {createUser, login, setUser, test} from "./redux/actions/users";
@@ -39,6 +39,7 @@ function App() {
                 <Route path="/profile/:id" component={() => <Profile logout={logOut} profile={user}/>} exact/>
                 <Route path="/create" component={() => <Create id={user.id}/>} exact/>
                 <Route path="/event/:id" component={() => <Event/>} exact/>
+                <Route path="/room/:v4" component={() => <Room/>} exact/>
                 <Route path="/events" component={() => <Events profile={user}/>} exact/>
                 <Route path="/auth" component={() => <Forms setProfile={logIn} setNewProfile={createProfile}/>} exact/>
                     {/*<Route path="/create" component={Create} exact/>*/}
