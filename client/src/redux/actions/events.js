@@ -5,8 +5,8 @@ export const setLoaded = (payload) => ({
 
 export const fetchMainEvents = () => async (dispatch) => {
     try {
-        // const res = await fetch("https://api.aurovd.ru/api/fetchMainEvents", {
-        const res = await fetch("http://localhost:8001/api/fetchMainEvents", {
+        const res = await fetch("https://api.aurovd.ru/api/fetchMainEvents", {
+        // const res = await fetch("http://localhost:8001/api/fetchMainEvents", {
             method: "GET"
         });
         const data = await res.json();
@@ -19,8 +19,8 @@ export const fetchMainEvents = () => async (dispatch) => {
 };
 export const fetchHistoryEvents = (body) => async (dispatch) => {
     try {
-        // const res = await fetch("https://api.aurovd.ru/api/fetchHistoryEvents", {
-        const res = await fetch("http://localhost:8001/api/fetchHistoryEvents", {
+        const res = await fetch("https://api.aurovd.ru/api/fetchHistoryEvents", {
+        // const res = await fetch("http://localhost:8001/api/fetchHistoryEvents", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
@@ -45,8 +45,8 @@ export const setMainEvents = (items) => ({
 
 export const eventReg = (body) => async (dispatch) => {
     try {
-        // const res = await fetch("https://api.aurovd.ru/api/eventReg", {
-        const res = await fetch("http://localhost:8001/api/eventReg", {
+        const res = await fetch("https://api.aurovd.ru/api/eventReg", {
+        // const res = await fetch("http://localhost:8001/api/eventReg", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
@@ -61,8 +61,8 @@ export const eventReg = (body) => async (dispatch) => {
 
 export const event = (body) => async (dispatch) => {
     try {
-        // const res = await fetch("https://api.aurovd.ru/api/event", {
-        const res = await fetch("http://localhost:8001/api/event", {
+        const res = await fetch("https://api.aurovd.ru/api/event", {
+        // const res = await fetch("http://localhost:8001/api/event", {
             method: "POST",
             headers: {
                 "Accept": "application/json",

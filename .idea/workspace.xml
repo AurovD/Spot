@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="webtrc, rooms">
-      <change afterPath="$PROJECT_DIR$/client/socket/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/socket/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/css/components/room.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Room.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Room.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webrtc/src/socket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc/src/socket/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +178,7 @@
       <workItem from="1622477014347" duration="15000" />
       <workItem from="1622579735960" duration="664000" />
       <workItem from="1622660732368" duration="11891000" />
-      <workItem from="1622680377652" duration="2563000" />
-    </task>
-    <task id="LOCAL-00024" summary="client folder">
-      <created>1621018290664</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1621018290664</updated>
+      <workItem from="1622680377652" duration="2899000" />
     </task>
     <task id="LOCAL-00025" summary="client folder">
       <created>1621021089735</created>
@@ -525,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622679409722</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="webtrc, rooms">
+      <created>1622682988981</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1622682988981</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
