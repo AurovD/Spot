@@ -1,0 +1,17 @@
+.screen {
+    background-color: #0002;
+    margin: 80px 50px;
+    width: calc(100vw - 420px);
+    min-height: calc(100vh - 160px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+.screen div {
+    background-color: #E9EAF2;
+    border-radius: 10px;
+    height: 350px;
+}

@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="rofl">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Room.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="webtrc, rooms">
+      <change afterPath="$PROJECT_DIR$/client/socket/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/socket/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/css/components/room.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/EventCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/eventCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webrtc/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webrtc/src/hooks/useWebRTC.js" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc/src/hooks/useWebRTC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webrtc/src/pages/Main/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc/src/pages/Main/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Room.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Room.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webrtc/src/socket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc/src/socket/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="JSX" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,6 +36,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/webrtc/package.json" />
   </component>
   <component name="ProjectId" id="1oHWEIK1a0BF8mXdmvLjsunrAVx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -192,14 +179,8 @@
       <workItem from="1622459336347" duration="11601000" />
       <workItem from="1622477014347" duration="15000" />
       <workItem from="1622579735960" duration="664000" />
-      <workItem from="1622660732368" duration="11415000" />
-    </task>
-    <task id="LOCAL-00023" summary="client folder">
-      <created>1621018275080</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1621018275080</updated>
+      <workItem from="1622660732368" duration="11891000" />
+      <workItem from="1622680377652" duration="2563000" />
     </task>
     <task id="LOCAL-00024" summary="client folder">
       <created>1621018290664</created>
@@ -537,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622580183318</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="webtrc, rooms">
+      <created>1622679409722</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1622679409722</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,6 +564,7 @@
     <MESSAGE value="users events, registration" />
     <MESSAGE value="profile, styles" />
     <MESSAGE value="rofl" />
-    <option name="LAST_COMMIT_MESSAGE" value="rofl" />
+    <MESSAGE value="webtrc, rooms" />
+    <option name="LAST_COMMIT_MESSAGE" value="webtrc, rooms" />
   </component>
 </project>

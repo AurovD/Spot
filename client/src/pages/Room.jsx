@@ -4,7 +4,12 @@ const Room = () => {
 
     return (
         <div className="room" style={{backgroundColor: "#1C1D22"}}>
-            Room
+            <div className={"screen"}>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     );
 }
