@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="webtrc, rooms">
+      <change afterPath="$PROJECT_DIR$/client/src/hooks/useStateWithCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/hooks/useWebRTC.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/socket/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/socket/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/socket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/socket/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/eventCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Room.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Room.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -59,9 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\client" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\client\src" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\components\creating\StepOne" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\src\assets" />
       <recent name="C:\Users\dmitr\OneDrive\Документы\Projects\spot\public" />
@@ -178,14 +192,11 @@
       <workItem from="1622477014347" duration="15000" />
       <workItem from="1622579735960" duration="664000" />
       <workItem from="1622660732368" duration="11891000" />
-      <workItem from="1622680377652" duration="2899000" />
-    </task>
-    <task id="LOCAL-00025" summary="client folder">
-      <created>1621021089735</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1621021089735</updated>
+      <workItem from="1622680377652" duration="2943000" />
+      <workItem from="1622684238037" duration="72000" />
+      <workItem from="1622708706069" duration="215000" />
+      <workItem from="1622805717755" duration="21252000" />
+      <workItem from="1622833478474" duration="765000" />
     </task>
     <task id="LOCAL-00026" summary="events, test,">
       <created>1621435719472</created>
@@ -523,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622682988981</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="webtrc, rooms">
+      <created>1622683319123</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1622683319123</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -17,8 +17,8 @@ const Event = () => {
 
     React.useEffect(async () => {
         try {
-            const res = await fetch("https://api.aurovd.ru/api/event", {
-            // const res = await fetch("http://localhost:8001/api/event", {
+            // const res = await fetch("https://api.aurovd.ru/api/event", {
+            const res = await fetch("http://localhost:8001/api/event", {
                 method: "POST",
                 headers: {
                     "Accept": "application/json",
