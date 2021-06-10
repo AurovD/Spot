@@ -16,14 +16,14 @@ const Forms = ({setProfile, setNewProfile}) => {
     }
 
     const [login, setLogin] = React.useState({
-        email: "ayrovdm@mail.ru",
-        pass: "123"
+        email: "",
+        pass: ""
     });
     const [registration, setRegistration] = React.useState({
-        name: "Аюров Дмитрий",
-        email: "ayrovdm@mail.ru",
-        pass: "123",
-        passCheck: "123"
+        name: "",
+        email: "",
+        pass: "",
+        passCheck: ""
     });
 
     // const [body, setBody] = React.useState({

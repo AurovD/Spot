@@ -33,6 +33,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
     display: flex;
+    z-index: 0;
 }
 .profile_options button {
     background-color: #1C1D22;
@@ -49,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .settings_button {
     display: flex;
@@ -60,4 +62,32 @@
     height: 5px;
     border-radius: 5px;
     background-color: #1C1D22;
+}
+.profile_menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
+    transition: min-height 300ms ease-in-out;
+}
+.menuList {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.menuList_li {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.menuList_a {
+    text-decoration: none;
+    color: #1C1D22;
+    font-weight: 400;
 }

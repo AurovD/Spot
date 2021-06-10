@@ -6,6 +6,7 @@ import {useParams} from 'react-router';
 const Room = () => {
     const {v4: roomID} = useParams();
     const {clients, provideMediaRef} = useWebRTC(roomID);
+    console.log(clients)
     return (
         <div className="room" style={{backgroundColor: "#1C1D22"}}>
             {/*<div className={"screen"}>*/}
@@ -14,22 +15,24 @@ const Room = () => {
             {/*    <div></div>*/}
             {/*    <div></div>*/}
             {/*</div>*/}
+            <div className="screen">
             {clients.map((clientID, index) => {
                 return (
-                    <div className="videoBox" key={clientID} id={clientID}>
-                        <video
-                            width='100%'
-                            height='100%'
-                            ref={instance => {
-                                provideMediaRef(clientID, instance);
-                            }}
-                            autoPlay
-                            playsInline
-                            muted={clientID === LOCAL_VIDEO}
-                        />
-                    </div>
+                        <div className="videoBox" key={clientID} id={clientID}>
+                            <video
+                                width='100%'
+                                height='100%'
+                                ref={instance => {
+                                    provideMediaRef(clientID, instance);
+                                }}
+                                autoPlay
+                                playsInline
+                                muted={clientID === LOCAL_VIDEO}
+                            />
+                        </div>
                 );
             })}
+            </div>
         </div>
     );
 };

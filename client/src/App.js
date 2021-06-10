@@ -20,10 +20,10 @@ function App() {
         dispatch(createUser(body));
     }, []);
 
-    const logOut = React.useCallback(() =>{
-        localStorage.removeItem("user");
-        dispatch(setUser());
-    }, [])
+    // const logOut = React.useCallback(() =>{
+    //     localStorage.removeItem("user");
+    //     dispatch(setUser());
+    // }, [])
 
     React.useEffect(() => {
             dispatch(setUser())
@@ -36,7 +36,7 @@ function App() {
                 <Nav />
                 <Header profile={user}/>
                 <Route path="/" component={Main} exact/>
-                <Route path="/profile/:id" component={() => <Profile logout={logOut} profile={user}/>} exact/>
+                <Route path="/profile/:id" component={() => <Profile profile={user}/>} exact/>
                 <Route path="/create" component={() => <Create id={user.id}/>} exact/>
                 <Route path="/event/:id" component={() => <Event/>} exact/>
                 <Route path="/room/:v4" component={() => <Room/>} exact/>

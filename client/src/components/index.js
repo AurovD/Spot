@@ -4,3 +4,4 @@ export { default as EventCard} from './EventCard';
 export { default as EventsBox} from './EventsBox';
 export { default as VideoConf} from './VideoConf';
 export { default as Aside} from './Aside';
+export { default as Menu} from './Menu';

@@ -41,6 +41,8 @@ const createEvent = async (req, res) => {
                         pool.query("UPDATE events SET bannerURL = $1 WHERE id = $2;", [req.files[0].filename, result.rows[0].id]);
                     }
                     pool.query("CREATE TABLE IF NOT EXISTS category(id SERIAL PRIMARY KEY, name_category VARCHAR(100), id_events INT[]);");
+                    pool.query("CREATE TABLE IF NOT EXISTS userevents(id SERIAL PRIMARY KEY, idUser INT REFERENCES users (id), idEvent INT REFERENCES events (id));");
+                    pool.query("INSERT INTO userevents (idUser, idEvent) VALUES ($1, $2)", [req.body.user, result.rows[0].id]);
                     // pool.query("INSERT INTO category(name_category) VALUES ('Other');");
                     pool.query(`UPDATE category SET id_events = array_append(id_events, $1) WHERE name_category = $2;`, [result.rows[0].id, req.body.category],(errors, res) => {
                         if(errors) {
@@ -79,7 +81,16 @@ const fetchMainEvents = async (req, res) => {
     });
 };
 const fetchHistoryEvents = async (req, res) => {
-    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE events.id IN (SELECT idevent FROM userHistory WHERE iduser = $1);", [req.body.user], (req, results) => {
+    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE events.id IN (SELECT idevent FROM userHistory WHERE iduser = $1);", [req.body.user], (err, results) => {
+        if(results){
+            res.send({
+                events: results.rows
+            })
+        }
+    });
+};
+const userEvents = async (req, res) => {
+    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE events.id IN (SELECT idevent FROM userevents WHERE iduser = $1);", [req.body.id], (err, results) => {
         if(results){
             res.send({
                 events: results.rows
@@ -101,4 +112,4 @@ const event = async (req, res) => {
     });
 };
 
-module.exports = {createEvent, fetchMainEvents, eventReg, fetchHistoryEvents, event };
+module.exports = {createEvent, fetchMainEvents, eventReg, fetchHistoryEvents, event, userEvents };

@@ -1,10 +1,31 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {useParams} from "react-router-dom";
-import {Aside, EventsBox} from "../components";
+import {Aside, EventsBox, Menu} from "../components";
 
-const Profile = ({logout, profile}) => {
+const Profile = ({profile}) => {
     let { id } = useParams();
+    const [error, setError] = React.useState(null);
+    const [items, setItems] = React.useState([]);
+    React.useEffect(async () => {
+        try {
+            // const res = await fetch("https://api.aurovd.ru/api/userevents", {
+            const res = await fetch("http://localhost:8001/api/userevents", {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({id: id})
+            });
+            const data = await res.json();
+            if(data) {
+                setItems(data.events);
+            }
+        } catch (err) {
+            setError(error);
+        }
+    }, [id]);
     return (
         <div className="main__container">
             <div className="main">
@@ -24,24 +45,9 @@ const Profile = ({logout, profile}) => {
                                 <p className="profile_p">5.0 (5000 оценок)</p>
                             </div>
                         </div>
-                        <div className="profile_options">
-                            {profile && profile.id == id ?
-                                <button onClick={event => {
-                                    logout();
-                                }}>
-                                    Выход
-                                </button>
-                                :
-                                <button>Подписаться</button>}
-                            <div className="profile_settings">
-                                <div className="settings_button">
-                                    <div className="circle_blue"></div>
-                                    <div className="circle_blue"></div>
-                                    <div className="circle_blue"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <Menu/>
                     </div>
+                    <EventsBox items={items}/>
                 </div>
                 <Aside/>
             </div>

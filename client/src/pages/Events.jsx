@@ -8,7 +8,7 @@ const Events= ({profile}) => {
     const items = useSelector(({mainEvents}) => mainEvents.items);
     React.useEffect(() => {
         dispatch(fetchHistoryEvents({user: profile.id}))
-    }, []);
+    }, [items]);
 
     return (
         <div className="main__container">

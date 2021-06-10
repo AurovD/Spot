@@ -1,12 +1,12 @@
 .event_card {
-    width: 400px;
-    height: 390px;
+    width: 380px;
+    height: 370px;
     background-color: #1C1D22;
     border-radius: 15px;
     box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.6);
 }
 .card__img {
-    height: 250px;
+    height: 230px;
     /*background-image: url("../../assets/abstract-653939_1920.jpg");*/
     background-size: 100%;
     background-repeat: no-repeat;

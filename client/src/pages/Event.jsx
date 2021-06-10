@@ -10,7 +10,6 @@ const Event = () => {
     const [error, setError] = React.useState(null);
     const [isLoaded, setIsLoaded] = React.useState(false);
     const [items, setItems] = React.useState([]);
-    console.log(items);
     // React.useEffect(() => {
     //     dispatch(event({id: id}));
     // }, [id]);
