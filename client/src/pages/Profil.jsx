@@ -9,8 +9,8 @@ const Profile = ({profile}) => {
     const [items, setItems] = React.useState([]);
     React.useEffect(async () => {
         try {
-            // const res = await fetch("https://api.aurovd.ru/api/userevents", {
-            const res = await fetch("http://localhost:8001/api/userevents", {
+            const res = await fetch("https://api.aurovd.ru/api/userevents", {
+            // const res = await fetch("http://localhost:8001/api/userevents", {
                 method: "POST",
                 headers: {
                     "Accept": "application/json",
