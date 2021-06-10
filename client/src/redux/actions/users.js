@@ -34,17 +34,17 @@ export const login = (body) => async (dispatch) => {
     }
 };
 export const test = () => async () => {
-    let res = await fetch("https://api.aurovd.ru/api/test", {
-    // let res = await fetch("http://localhost:8001/api/test", {
-        method: "GET",
-        headers: {
-            "Accept": "application/json"
-        },
-    });
-    let data = await res.json();
-    if(data) {
-        console.log(data)
-    }
+    // let res = await fetch("https://api.aurovd.ru/api/test", {
+    // // let res = await fetch("http://localhost:8001/api/test", {
+    //     method: "GET",
+    //     headers: {
+    //         "Accept": "application/json"
+    //     },
+    // });
+    // let data = await res.json();
+    // if(data) {
+    //     console.log(data)
+    // }
 };
 
 export const setUser = () => ({
