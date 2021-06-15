@@ -13,8 +13,8 @@ const Profile = ({profile}) => {
         let cleanupFunction = false;
         const fetchData = async () => {
             try {
-                // const res = await fetch("https://api.aurovd.ru/api/userevents", {
-                const res = await fetch("http://localhost:8001/api/userevents", {
+                const res = await fetch("https://api.aurovd.ru/api/userevents", {
+                // const res = await fetch("http://localhost:8001/api/userevents", {
                     method: "POST",
                     headers: {
                         "Accept": "application/json",
@@ -38,8 +38,8 @@ const Profile = ({profile}) => {
         let cleanupFunction = false;
         const fetchData = async () => {
             try {
-                // const res = await fetch("https://api.aurovd.ru/api/getuser", {
-                const res = await fetch("http://localhost:8001/api/getuser", {
+                const res = await fetch("https://api.aurovd.ru/api/getuser", {
+                // const res = await fetch("http://localhost:8001/api/getuser", {
                     method: "POST",
                     headers: {
                         "Accept": "application/json",
@@ -64,8 +64,8 @@ const Profile = ({profile}) => {
     const updateRating = async (number, e) => {
         console.log(number)
         try {
-            // const res = await fetch("https://api.aurovd.ru/api/userrating", {
-            await fetch("http://localhost:8001/api/userrating", {
+            const res = await fetch("https://api.aurovd.ru/api/userrating", {
+            // await fetch("http://localhost:8001/api/userrating", {
                 method: "POST",
                 headers: {
                     "Accept": "application/json",
