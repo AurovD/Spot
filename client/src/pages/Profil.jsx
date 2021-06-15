@@ -9,6 +9,7 @@ const Profile = ({profile}) => {
     const [error, setError] = React.useState(null);
     const [items, setItems] = React.useState([]);
     const [user, setUser] = React.useState([]);
+    console.log(user)
     React.useEffect(() => {
         let cleanupFunction = false;
         const fetchData = async () => {
@@ -97,9 +98,9 @@ const Profile = ({profile}) => {
                     <div className="main_header profile_header">
                         <div className="profile_avatar"></div>
                         <div className="profile_info">
-                            <h2>{user.user.name}</h2>
+                            <h2>{user.user ? user.user.name : null}</h2>
                             <p className="profile_p">0 подписчиков</p>
-                            <p className="profile_p profile_p__text">{user.user.description}</p>
+                            <p className="profile_p profile_p__text">{user.user ? user.user.description : ""}</p>
                             <div className="card_rating">
                                 {/*<div className="circle" onClick={(e) => updateRating(1, e)}></div>*/}
                                 {/*<div className="circle" onClick={(e) => updateRating(2, e)}></div>*/}
