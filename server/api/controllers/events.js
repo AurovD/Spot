@@ -29,7 +29,7 @@ const createEvent = async (req, res) => {
         } else if (!req.files) {
             return res.send({ "msg": 'Please select an image to upload' });
         } else {
-            pool.query("CREATE TABLE IF NOT EXISTS events(id SERIAL PRIMARY KEY, title VARCHAR(200), description TEXT, price INT, bannerURL VARCHAR(200), countGuests SMALLINT, dateStart DATE, timeStart TIME WITH TIME ZONE, type VARCHAR(50), status BOOLEAN DEFAULT false, periodic VARCHAR(100), idCreator INT REFERENCES users (id), admins INT[], members INT [], category VARCHAR(100), tags VARCHAR(50)[]);");
+            pool.query("CREATE TABLE IF NOT EXISTS events(id SERIAL PRIMARY KEY, title VARCHAR(200), description TEXT, price INT, bannerURL VARCHAR(200), countGuests SMALLINT, dateStart DATE, timeStart TIME WITH TIME ZONE, type VARCHAR(50), status BOOLEAN DEFAULT false, periodic VARCHAR(100), idCreator INT REFERENCES users (id), admins INT[], members INT [], category VARCHAR(100), tags VARCHAR(50)[]), link VARCHAR(150);");
             pool.query('INSERT INTO events (title, description, price, countGuests, dateStart, timeStart, type, periodic, category, link) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING id', [req.body.title, req.body.description, req.body.price, req.body.maxParticipants, req.body.startDate, req.body.startTime, req.body.type, req.body.periodic, req.body.category, uuidv4()], (err, result) => {
                 if (err) {
                     console.log(err)

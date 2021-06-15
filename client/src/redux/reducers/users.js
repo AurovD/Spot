@@ -1,6 +1,7 @@
 const initialState = {
     id: "",
-    user: ""
+    user: "",
+    msg: ""
 };
 const users = (state = initialState, action) => {
     switch (action.type) {

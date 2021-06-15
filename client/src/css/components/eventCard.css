@@ -69,6 +69,7 @@
     height: 8px;
     border-radius: 8px;
     background-color: rgb(255, 101, 13);
+    cursor: pointer;
 }
 .circle_grey {
     background-color: #746D69;

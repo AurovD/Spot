@@ -2,13 +2,13 @@ import React from 'react';
 import MD5 from "../assets/md5";
 import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from 'react-router-dom';
+import {setUser} from "../redux/actions/users";
 // http://codepickup.in/php/create-a-zoom-meeting-using-zoom-api/
 
 const Forms = ({setProfile, setNewProfile}) => {
     const dispatch = useDispatch();
     const history = useHistory();
     const [loginPage, setRegPage] = React.useState(true);
-    const [selectedFiles, setSelectedFiles] = React.useState([]);
 
 
     function switchProfileForm() {
