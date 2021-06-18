@@ -9,13 +9,16 @@ const Profile = ({profile}) => {
     const [error, setError] = React.useState(null);
     const [items, setItems] = React.useState([]);
     const [user, setUser] = React.useState([]);
-    console.log(user)
+    const [num, setNum] = React.useState(null);
+    let circles = [];
+
+
     React.useEffect(() => {
         let cleanupFunction = false;
         const fetchData = async () => {
             try {
-                const res = await fetch("https://api.aurovd.ru/api/userevents", {
-                // const res = await fetch("http://localhost:8001/api/userevents", {
+                // const res = await fetch("https://api.aurovd.ru/api/userevents", {
+                const res = await fetch("http://localhost:8001/api/userevents", {
                     method: "POST",
                     headers: {
                         "Accept": "application/json",
@@ -39,8 +42,8 @@ const Profile = ({profile}) => {
         let cleanupFunction = false;
         const fetchData = async () => {
             try {
-                const res = await fetch("https://api.aurovd.ru/api/getuser", {
-                // const res = await fetch("http://localhost:8001/api/getuser", {
+                // const res = await fetch("https://api.aurovd.ru/api/getuser", {
+                const res = await fetch("http://localhost:8001/api/getuser", {
                     method: "POST",
                     headers: {
                         "Accept": "application/json",
@@ -51,6 +54,7 @@ const Profile = ({profile}) => {
                 const data = await res.json();
                 if(data && !cleanupFunction) {
                     setUser(data);
+                    setNum(Math.floor(data.rating));
                 }
             } catch (err) {
                 setError(error);
@@ -63,10 +67,9 @@ const Profile = ({profile}) => {
 
 
     const updateRating = async (number, e) => {
-        console.log(number)
         try {
-            const res = await fetch("https://api.aurovd.ru/api/userrating", {
-            // await fetch("http://localhost:8001/api/userrating", {
+            // const res = await fetch("https://api.aurovd.ru/api/userrating", {
+            await fetch("http://localhost:8001/api/userrating", {
                 method: "POST",
                 headers: {
                     "Accept": "application/json",
@@ -77,13 +80,12 @@ const Profile = ({profile}) => {
                     idhost: profile.id,
                     number: number})
             });
+            setNum(number);
         } catch (err) {
             throw err
         }
     };
 
-    let circles = []
-    let num = Math.floor(user.rating);
     for (let i = 0; i < num; ++i) {
         circles.push(<div className="circle" key={i} onClick={(e) => updateRating(i + 1, e)}></div>);
     }

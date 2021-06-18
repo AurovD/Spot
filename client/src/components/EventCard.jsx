@@ -2,6 +2,8 @@ import React from 'react';
 import {eventReg} from "../redux/actions/events";
 import {useDispatch, useSelector} from "react-redux";
 import DefaultImg from '../assets/abstract-653939_1920.jpg';
+import Unfavorite from '../assets/star.svg';
+import Favorite from '../assets/starfull.svg';
 import {useHistory} from "react-router-dom";
 
 let months = ['января', 'февраля', 'марта', 'апреля','мая', 'июня', 'июля', 'августа','сентября', 'октября', 'ноября', 'декабря'];
@@ -61,7 +63,10 @@ const EventCard = ({ event }) => {
                 <a onClick={() => history.push(`/profile/${event.idcreator}`)}>{event.name}</a>
             </div>
             <div className="card_footer">
-                <button onClick={onEventReg}>Участвовать</button>
+                <div className="flex">
+                    <button onClick={onEventReg}>Участвовать</button>
+                    <p>{event.price} рублей</p>
+                </div>
                 <div className="card_rating">
                     {
                         circles
@@ -69,6 +74,7 @@ const EventCard = ({ event }) => {
                     <p>{event.members ? event.members.length : 0}/{event.countguests}</p>
                 </div>
             </div>
+            <img className="favorites" src={Favorite}/>
         </div>
     );
 }

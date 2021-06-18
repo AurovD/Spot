@@ -40,11 +40,11 @@ const createEvent = async (req, res) => {
                     if(req.files.length !== 0){
                         pool.query("UPDATE events SET bannerURL = $1 WHERE id = $2;", [req.files[0].filename, result.rows[0].id]);
                     }
-                    pool.query("CREATE TABLE IF NOT EXISTS category(id SERIAL PRIMARY KEY, name_category VARCHAR(100), id_events INT[]);");
+                    pool.query("CREATE TABLE IF NOT EXISTS category(name_category VARCHAR(100), id_event INT REFERENCES events (id));");
                     pool.query("CREATE TABLE IF NOT EXISTS userevents(id SERIAL PRIMARY KEY, idUser INT REFERENCES users (id), idEvent INT REFERENCES events (id));");
-                    pool.query("INSERT INTO userevents (idUser, idEvent) VALUES ($1, $2)", [req.body.user, result.rows[0].id]);
+                    pool.query("INSERT INTO userevents (idUser, idEvent) VALUES ($1, $2);", [req.body.user, result.rows[0].id]);
                     // pool.query("INSERT INTO category(name_category) VALUES ('Other');");
-                    pool.query(`UPDATE category SET id_events = array_append(id_events, $1) WHERE name_category = $2;`, [result.rows[0].id, req.body.category],(errors, res) => {
+                    pool.query(`INSERT INTO category (id_event, name_category) VALUES ($1, $2);`, [result.rows[0].id, req.body.category],(errors, res) => {
                         if(errors) {
                             console.log("category", errors);
                         }
@@ -105,8 +105,8 @@ const eventReg = async (req, res) => {
     res.send({msg: "done"});
 };
 const event = async (req, res) => {
-    pool.query("SELECT * FROM events WHERE id = $1;", [req.body.id], (req, results) => {
-        if(results){
+    pool.query("SELECT users.name, events.* FROM events JOIN users ON events.idCreator = users.id WHERE events.id = $1;", [req.body.id], (req, results) => {
+        if(results.rows){
             return res.send(results.rows[0]);
         }
     });

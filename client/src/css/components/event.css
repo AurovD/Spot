@@ -1,0 +1,40 @@
+.main_event {
+    padding: 80px 50px;
+}
+.event_banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: calc(100vh - 160px);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: linear-gradient(to left, transparent, #000 75%), url("../../assets/abstract-653939_1920.jpg");*/
+}
+.banner_info {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    flex-direction: column;
+    color: #fff;
+}
+.banner_info  h2{
+    font-size: 4em;
+    color: rgb(255, 101, 13);
+    font-weight: 900;
+}
+.banner_info  h6{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 800;
+}
+.banner_info  p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.banner_info  a{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+}

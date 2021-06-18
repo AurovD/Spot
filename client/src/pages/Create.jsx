@@ -10,7 +10,7 @@ const CreatePage = ({id}) => {
     const [body, setBody] = React.useState({
         title: "Test",
         description: "Lorem ipsum dolor sit amet",
-        price: 10,
+        price: 0,
         maxParticipants: 12,
         startDate: "",
         startTime: "",
@@ -232,14 +232,14 @@ const CreatePage = ({id}) => {
                                         return {...prevState, category: val}
                                     });
                                 }}>
-                                    <option value="All">Все</option>
-                                    <option value="Education_and_science">Образование и наука</option>
-                                    <option value="Tech">Интернет и технологии</option>
-                                    <option value="Business">Бизнес</option>
-                                    <option value="Entertainment_and_Art">Искусство и развлечения</option>
-                                    <option value="Health_and_sport">Здоровье и спорт</option>
-                                    <option value="Beauty_style">Красота и стиль</option>
-                                    <option value="Other">Другое</option>
+                                    <option value="Все">Все</option>
+                                    <option value="Образование и наука">Образование и наука</option>
+                                    <option value="Интернет и технологии">Интернет и технологии</option>
+                                    <option value="Бизнес">Бизнес</option>
+                                    <option value="Искусство и развлечения">Искусство и развлечения</option>
+                                    <option value="Здоровье и спорт">Здоровье и спорт</option>
+                                    <option value="Красота и стиль">Красота и стиль</option>
+                                    <option value="Другое">Другое</option>
                                 </select>
                             </div>
                             <div className="stepBox__row">

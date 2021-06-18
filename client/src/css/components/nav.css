@@ -36,8 +36,8 @@
     color: #E9EAF2;
     font-weight: 400;
 }
-@media (max-width: 768px) {
-    .nav__container {
-        display: none;
-    }
-}
+/*@media (max-width: 768px) {*/
+/*    .nav__container {*/
+/*        display: none;*/
+/*    }*/
+/*}*/

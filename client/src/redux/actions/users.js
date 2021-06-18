@@ -3,8 +3,8 @@ function userToken() {
     return user;
 }
 export const createUser = (body) => async () => {
-    let res = await fetch("https://api.aurovd.ru/api/signup", {
-    // let res = await fetch("http://localhost:8001/api/signup", {
+    // let res = await fetch("https://api.aurovd.ru/api/signup", {
+    let res = await fetch("http://localhost:8001/api/signup", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -18,8 +18,8 @@ export const createUser = (body) => async () => {
     }
 };
 export const login = (body) => async (dispatch) => {
-    let res = await fetch("https://api.aurovd.ru/api/login", {
-    // let res = await fetch("http://localhost:8001/api/login", {
+    // let res = await fetch("https://api.aurovd.ru/api/login", {
+    let res = await fetch("http://localhost:8001/api/login", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -34,8 +34,8 @@ export const login = (body) => async (dispatch) => {
     }
 };
 export const test = () => async () => {
-    let res = await fetch("https://api.aurovd.ru/api/test", {
-    // let res = await fetch("http://localhost:8001/api/test", {
+    // let res = await fetch("https://api.aurovd.ru/api/test", {
+    let res = await fetch("http://localhost:8001/api/test", {
         method: "GET",
         headers: {
             "Accept": "application/json"
