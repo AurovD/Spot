@@ -34,8 +34,8 @@ const Menu = React.memo(function Menu() {
     const fetchData = async (click = false) => {
         let cleanupFunction = false;
         try {
-            // const res = await fetch("https://api.aurovd.ru/api/subscribe", {
-            let res = await fetch("http://localhost:8001/api/subscribe", {
+            const res = await fetch("https://api.aurovd.ru/api/subscribe", {
+            // let res = await fetch("http://localhost:8001/api/subscribe", {
                 method: "POST",
                 headers: {
                     "Accept": "application/json",

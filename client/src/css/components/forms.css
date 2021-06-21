@@ -45,6 +45,7 @@
     font-size: 150pt;
     text-shadow: 1px 1px 2px black, 0 0 0.8em rgb(255, 101, 13);
     z-index: -1;
+    font-weight: 800;
 }
 .formBox h2 {
     color: #fff;

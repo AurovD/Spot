@@ -84,7 +84,7 @@ const Forms = ({setProfile, setNewProfile}) => {
             {
                 loginPage ?
                         <div className="formBox">
-                    <h2>LOGIN</h2>
+                    <h2>ЛОГИН</h2>
                     <form action="" method="POST" className="profile_form">
                         <div className="form_groupbox">
                             <input type="text" className="form_element" placeholder="Email" value={login.email}
@@ -111,7 +111,7 @@ const Forms = ({setProfile, setNewProfile}) => {
                     </p>
                 </div> :
                 <div className="formBox">
-                    <h2>SIGNUP</h2>
+                    <h2>Регистрация</h2>
                     <form action="" method="POST" className="profile_form">
                         <div className="form_groupbox">
                             <input type="text"  className="form_element" placeholder="Имя" value={registration.name} onChange={e => {

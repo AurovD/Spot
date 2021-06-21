@@ -37,4 +37,19 @@
     font-size: 2em;
     color: #fff;
     font-weight: 300;
+    cursor: pointer;
+}
+.banner_info button{
+    width: 200px;
+    height: 40px;
+    background-color: #FF650D;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #E9EAF2;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: inherit;
+    margin: 20px 20px;
 }

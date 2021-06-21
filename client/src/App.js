@@ -38,7 +38,7 @@ function App() {
                 <Route path="/" component={Main} exact/>
                 <Route path="/profile/:id" component={() => <Profile profile={user}/>} exact/>
                 <Route path="/create" component={() => <Create id={user.id}/>} exact/>
-                <Route path="/event/:id" component={() => <Event/>} exact/>
+                <Route path="/event/:id" component={() => <Event profile={user}/>} exact/>
                 <Route path="/room/:v4" component={() => <Room/>} exact/>
                 <Route path="/events" component={() => <Events profile={user}/>} exact/>
                 <Route path="/auth" component={() => <Forms setProfile={logIn} setNewProfile={createProfile}/>} exact/>

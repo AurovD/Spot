@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="profile, rating">
-      <change afterPath="$PROJECT_DIR$/client/src/css/components/event.css" afterDir="false" />
+    <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="event page, event card, favorites, following">
+      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/event.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/EventCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/components/eventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/eventCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/components/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Create.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/event.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/event.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/css/components/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/forms.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Forms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Forms.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="JSX" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -214,14 +210,11 @@
       <workItem from="1623796813286" duration="847000" />
       <workItem from="1623844011131" duration="587000" />
       <workItem from="1624005732717" duration="937000" />
-      <workItem from="1624009157889" duration="17868000" />
-    </task>
-    <task id="LOCAL-00034" summary="test connection">
-      <created>1621458573387</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1621458573387</updated>
+      <workItem from="1624009157889" duration="17955000" />
+      <workItem from="1624085766349" duration="246000" />
+      <workItem from="1624177611406" duration="3231000" />
+      <workItem from="1624217436615" duration="1007000" />
+      <workItem from="1624220528702" duration="10488000" />
     </task>
     <task id="LOCAL-00035" summary="test connection">
       <created>1621459857961</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623785730034</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="event page, event card, favorites, following">
+      <created>1624039602831</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1624039602831</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,6 +601,7 @@
     <MESSAGE value="webtrc, rooms" />
     <MESSAGE value="webtrc, rooms, profile" />
     <MESSAGE value="profile, rating" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile, rating" />
+    <MESSAGE value="event page, event card, favorites, following" />
+    <option name="LAST_COMMIT_MESSAGE" value="event page, event card, favorites, following" />
   </component>
 </project>
