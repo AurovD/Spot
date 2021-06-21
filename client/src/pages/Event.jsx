@@ -79,7 +79,7 @@ const Event = ({profile}) => {
     // React.useEffect(() => {
     //     setInterval(() => setTimer(getTime( Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`))), 10000)
     // }, [timer]);
-
+    console.log(Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`), Date.now())
     return (
         <div className="main__container">
             <div className="main_event">
