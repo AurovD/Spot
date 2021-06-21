@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="event page, event card, favorites, following">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/socket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/socket/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/controllers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/controllers/events.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,14 +203,7 @@
       <workItem from="1624217436615" duration="1007000" />
       <workItem from="1624220528702" duration="11414000" />
       <workItem from="1624239580950" duration="3507000" />
-      <workItem from="1624265373454" duration="1834000" />
-    </task>
-    <task id="LOCAL-00037" summary="test connection">
-      <created>1621460232734</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1621460232734</updated>
+      <workItem from="1624265373454" duration="2540000" />
     </task>
     <task id="LOCAL-00038" summary="test connection">
       <created>1621460266538</created>
@@ -551,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624238162989</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="event page, event card, favorites, following">
+      <created>1624269376639</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1624269376639</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

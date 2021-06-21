@@ -8,6 +8,6 @@ const options = {
 }
 
 // const socket = io('http://localhost:8001/', options);
-const socket = io('/', options);
+const socket = io('http://api.aurovd.ru/', options);
 
 export default socket;
