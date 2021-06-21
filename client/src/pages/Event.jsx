@@ -32,7 +32,6 @@ const Event = ({profile}) => {
     // React.useEffect(() => {
     //     dispatch(event({id: id}));
     // }, [id]);
-    console.log(isLoaded)
     React.useEffect(() => {
         dispatch(event({id: id}))
     }, []);
@@ -81,7 +80,6 @@ const Event = ({profile}) => {
     //     setInterval(() => setTimer(getTime( Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`))), 10000)
     // }, [timer]);
 
-    console.log(items, profile.id)
     return (
         <div className="main__container">
             <div className="main_event">
@@ -94,16 +92,17 @@ const Event = ({profile}) => {
                         <p>{items.description}</p>
                         <a onClick={() => history.push(`/profile/${items.idcreator}`)}>{items.name}</a>
                         {items && isLoaded && <p>{getDateFormat(items.datestart)} {getTimeFormat(items.timestart)}</p>}
-                        { items.members && items.members.includes(profile.id) || items.idcreator === profile.id ?
-                            <button  onClick={() => {
-                                if(Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`) <= Date.now()){
-                                    history.push(`/room/${isLoaded && items.link}`)
-                                }
-                            }}>{
-                                Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`) <= Date.now() ? "Войти" : `В ожидании`
-                            }</button> :
-                            <button onClick={onEventReg}>УЧАСТВОВАТЬ</button>
-                        }
+                        { profile ? <div>                        {
+                            items.members && items.members.includes(profile.id) || items.idcreator === profile.id ?
+                                <button onClick={() => {
+                                    if (Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`) <= Date.now()) {
+                                        history.push(`/room/${isLoaded && items.link}`)
+                                    }
+                                }}>{
+                                    Date.parse(`${isLoaded && items.datestart.split("T")[0]} ${items.timestart}`) <= Date.now() ? "Войти" : `В ожидании`
+                                }</button> :
+                                <button onClick={onEventReg}>УЧАСТВОВАТЬ</button>
+                        }</div> : <button onClick={() => history.push(`/auth`)}>Войти в аккаунт</button>}
                     </div>
                     <div>
                     </div>

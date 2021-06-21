@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b81d777b-cd2a-4044-ac8f-dfefc75f4034" name="Default Changelist" comment="event page, event card, favorites, following">
-      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/event.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/components/event.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/event.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/components/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/components/forms.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Event.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Forms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Forms.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/models/bd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/bd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,14 +201,7 @@
       <workItem from="1624085766349" duration="246000" />
       <workItem from="1624177611406" duration="3231000" />
       <workItem from="1624217436615" duration="1007000" />
-      <workItem from="1624220528702" duration="10488000" />
-    </task>
-    <task id="LOCAL-00035" summary="test connection">
-      <created>1621459857961</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1621459857961</updated>
+      <workItem from="1624220528702" duration="11155000" />
     </task>
     <task id="LOCAL-00036" summary="test connection">
       <created>1621459991850</created>
@@ -559,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624039602831</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="event page, event card, favorites, following">
+      <created>1624237486055</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1624237486055</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
