@@ -24,6 +24,8 @@ function shareRoomsInfo() {
 io.on('connection', socket => {
     shareRoomsInfo();
 
+    console.log('Client connected');
+
     socket.on(ACTIONS.JOIN, config => {
         const {room: roomID} = config;
         const {rooms: joinedRooms} = socket;
@@ -99,6 +101,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static("./public"));
 app.use("/api", require("./api/routes/index"));
 
-server.listen(port);
+server.listen(8001, '194-58-121-72', (err) => {
+    if (err) {
+        console.log(err.stack);
+    }
+});
 
 // proxy_set_header Access-Control-Allow-Origin *;
