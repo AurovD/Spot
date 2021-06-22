@@ -101,10 +101,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static("./public"));
 app.use("/api", require("./api/routes/index"));
 
-server.listen(8001, '194-58-121-72', (err) => {
-    if (err) {
-        console.log(err.stack);
-    }
-});
+server.listen(port);
 
 // proxy_set_header Access-Control-Allow-Origin *;
